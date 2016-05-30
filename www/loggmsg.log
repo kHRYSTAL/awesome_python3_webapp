@@ -1,0 +1,5 @@
+levelname:INFO filename: app.py outputNumber: [36]  thread: MainThread output msg:  server start at http://127.0.0.1:9000... - [30/May/2016 23:08:17]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [30/May/2016:15:08:37 +0000] "GET / HTTP/1.1" 200 16 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [30/May/2016 23:08:37]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [30/May/2016:15:08:37 +0000] "GET /favicon.ico HTTP/1.1" 404 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [30/May/2016 23:08:37]
+levelname:INFO filename: app.py outputNumber: [36]  thread: MainThread output msg:  server start at http://127.0.0.1:9000... - [30/May/2016 23:16:42]
+levelname:INFO filename: app.py outputNumber: [37]  thread: MainThread output msg:  server start at http://127.0.0.1:9000... - [30/May/2016 23:19:59]

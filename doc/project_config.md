@@ -4,7 +4,7 @@
 
 ```
 $ python3 --version
-Python 3.5.1
+Python 3.5.0
 ```
 
 
