@@ -902,3 +902,603 @@ levelname:INFO filename: orm.py outputNumber: [23]  thread: MainThread output ms
 levelname:INFO filename: orm.py outputNumber: [57]  thread: MainThread output msg:  rows returned: 2 - [31/May/2016 21:01:54]
 levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = {'__template__': 'test.html', 'users': [{'passwd': 'yyg1990918', 'admin': 0, 'email': 'khrystal0918@qq.com', 'image': 'about:blank', 'name': 'kHRYSTAL', 'id': '0014646843474309782d4d333004dc1b53af5483904cc4a000', 'created_at': 1464684347.42998}, {'passwd': 'yyg1990918', 'admin': 0, 'email': '723526676@qq.com', 'image': 'about:blank', 'name': 'Matt', 'id': '00146469823107184645f05ce95426c9d015bd8bbb99d8d000', 'created_at': 1464698231.07143}]} - [31/May/2016 21:01:54]
 levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:13:01:54 +0000] "GET / HTTP/1.1" 200 268 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [31/May/2016 21:01:54]
+levelname:INFO filename: orm.py outputNumber: [27]  thread: MainThread output msg:  create database connection pool... - [01/Jun/2016 00:39:20]
+levelname:INFO filename: app.py outputNumber: [41]  thread: MainThread output msg:  init jinja2.... - [01/Jun/2016 00:39:20]
+levelname:INFO filename: app.py outputNumber: [56]  thread: MainThread output msg:  set jinja2 template path: /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/templates - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [137]  thread: MainThread output msg:  found model: User (table: users) - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: name ==> <StringField, varchar(50):None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: email ==> <StringField, varchar(50):None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: id ==> <StringField, varchar(50):None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: admin ==> <BooleanField, boolean:None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: created_at ==> <FloatField, real:None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: passwd ==> <StringField, varchar(50):None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: image ==> <StringField, varchar(500):None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [137]  thread: MainThread output msg:  found model: Blog (table: blogs) - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: summary ==> <StringField, varchar(200):None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_name ==> <StringField, varchar(50):None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: name ==> <StringField, varchar(50):None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: content ==> <TextField, text:None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_id ==> <StringField, varchar(50):None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: id ==> <StringField, varchar(50):None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: created_at ==> <FloatField, real:None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_image ==> <StringField, varchar(500):None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [137]  thread: MainThread output msg:  found model: Comment (table: comments) - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: create_at ==> <FloatField, real:None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: content ==> <TextField, text:None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_name ==> <StringField, varchar(50):None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: blog_id ==> <StringField, varchar(50):None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_id ==> <StringField, varchar(50):None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: id ==> <StringField, varchar(50):None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_image ==> <StringField, varchar(500):None> - [01/Jun/2016 00:39:20]
+levelname:INFO filename: coroweb.py outputNumber: [228]  thread: MainThread output msg:  add static /static/ => /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/static - [01/Jun/2016 00:39:20]
+levelname:INFO filename: orm.py outputNumber: [27]  thread: MainThread output msg:  create database connection pool... - [01/Jun/2016 00:40:04]
+levelname:INFO filename: app.py outputNumber: [41]  thread: MainThread output msg:  init jinja2.... - [01/Jun/2016 00:40:04]
+levelname:INFO filename: app.py outputNumber: [56]  thread: MainThread output msg:  set jinja2 template path: /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/templates - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [137]  thread: MainThread output msg:  found model: User (table: users) - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: email ==> <StringField, varchar(50):None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: passwd ==> <StringField, varchar(50):None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: id ==> <StringField, varchar(50):None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: created_at ==> <FloatField, real:None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: image ==> <StringField, varchar(500):None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: name ==> <StringField, varchar(50):None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: admin ==> <BooleanField, boolean:None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [137]  thread: MainThread output msg:  found model: Blog (table: blogs) - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_image ==> <StringField, varchar(500):None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: content ==> <TextField, text:None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: id ==> <StringField, varchar(50):None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: created_at ==> <FloatField, real:None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_id ==> <StringField, varchar(50):None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_name ==> <StringField, varchar(50):None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: name ==> <StringField, varchar(50):None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: summary ==> <StringField, varchar(200):None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [137]  thread: MainThread output msg:  found model: Comment (table: comments) - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_image ==> <StringField, varchar(500):None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: blog_id ==> <StringField, varchar(50):None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: id ==> <StringField, varchar(50):None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: create_at ==> <FloatField, real:None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_id ==> <StringField, varchar(50):None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_name ==> <StringField, varchar(50):None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: content ==> <TextField, text:None> - [01/Jun/2016 00:40:04]
+levelname:INFO filename: coroweb.py outputNumber: [228]  thread: MainThread output msg:  add static /static/ => /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/static - [01/Jun/2016 00:40:04]
+levelname:INFO filename: app.py outputNumber: [182]  thread: MainThread output msg:  server start at http://127.0.0.1:9000... - [01/Jun/2016 00:40:04]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET / - [01/Jun/2016 00:40:11]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 00:40:11]
+levelname:INFO filename: coroweb.py outputNumber: [215]  thread: MainThread output msg:  call with args: {'request': <Request GET / >} - [01/Jun/2016 00:40:11]
+levelname:INFO filename: orm.py outputNumber: [23]  thread: MainThread output msg:  SQL: select `id`, `email`,`passwd`,`created_at`,`image`,`name`,`admin` from `users`, ARGS: [] - [01/Jun/2016 00:40:11]
+levelname:INFO filename: orm.py outputNumber: [57]  thread: MainThread output msg:  rows returned: 2 - [01/Jun/2016 00:40:11]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = {'users': [{'email': 'khrystal0918@qq.com', 'passwd': 'yyg1990918', 'id': '0014646843474309782d4d333004dc1b53af5483904cc4a000', 'created_at': 1464684347.42998, 'admin': 0, 'name': 'kHRYSTAL', 'image': 'about:blank'}, {'email': '723526676@qq.com', 'passwd': 'yyg1990918', 'id': '00146469823107184645f05ce95426c9d015bd8bbb99d8d000', 'created_at': 1464698231.07143, 'admin': 0, 'name': 'Matt', 'image': 'about:blank'}], '__template__': 'test.html'} - [01/Jun/2016 00:40:11]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:16:40:11 +0000] "GET / HTTP/1.1" 200 266 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 00:40:11]
+levelname:INFO filename: orm.py outputNumber: [27]  thread: MainThread output msg:  create database connection pool... - [01/Jun/2016 01:24:57]
+levelname:INFO filename: app.py outputNumber: [41]  thread: MainThread output msg:  init jinja2.... - [01/Jun/2016 01:24:57]
+levelname:INFO filename: app.py outputNumber: [56]  thread: MainThread output msg:  set jinja2 template path: /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/templates - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [137]  thread: MainThread output msg:  found model: User (table: users) - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: created_at ==> <FloatField, real:None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: image ==> <StringField, varchar(500):None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: admin ==> <BooleanField, boolean:None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: name ==> <StringField, varchar(50):None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: passwd ==> <StringField, varchar(50):None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: email ==> <StringField, varchar(50):None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: id ==> <StringField, varchar(50):None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [137]  thread: MainThread output msg:  found model: Blog (table: blogs) - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_id ==> <StringField, varchar(50):None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_image ==> <StringField, varchar(500):None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: name ==> <StringField, varchar(50):None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: summary ==> <StringField, varchar(200):None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: created_at ==> <FloatField, real:None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: content ==> <TextField, text:None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_name ==> <StringField, varchar(50):None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: id ==> <StringField, varchar(50):None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [137]  thread: MainThread output msg:  found model: Comment (table: comments) - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: blog_id ==> <StringField, varchar(50):None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_id ==> <StringField, varchar(50):None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_image ==> <StringField, varchar(500):None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: content ==> <TextField, text:None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_name ==> <StringField, varchar(50):None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: id ==> <StringField, varchar(50):None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: create_at ==> <FloatField, real:None> - [01/Jun/2016 01:24:57]
+levelname:INFO filename: coroweb.py outputNumber: [228]  thread: MainThread output msg:  add static /static/ => /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/static - [01/Jun/2016 01:24:57]
+levelname:INFO filename: orm.py outputNumber: [27]  thread: MainThread output msg:  create database connection pool... - [01/Jun/2016 01:25:20]
+levelname:INFO filename: app.py outputNumber: [41]  thread: MainThread output msg:  init jinja2.... - [01/Jun/2016 01:25:20]
+levelname:INFO filename: app.py outputNumber: [56]  thread: MainThread output msg:  set jinja2 template path: /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/templates - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [137]  thread: MainThread output msg:  found model: User (table: users) - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: id ==> <StringField, varchar(50):None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: name ==> <StringField, varchar(50):None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: admin ==> <BooleanField, boolean:None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: email ==> <StringField, varchar(50):None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: passwd ==> <StringField, varchar(50):None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: created_at ==> <FloatField, real:None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: image ==> <StringField, varchar(500):None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [137]  thread: MainThread output msg:  found model: Blog (table: blogs) - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: id ==> <StringField, varchar(50):None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: name ==> <StringField, varchar(50):None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_id ==> <StringField, varchar(50):None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: created_at ==> <FloatField, real:None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_image ==> <StringField, varchar(500):None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: summary ==> <StringField, varchar(200):None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: content ==> <TextField, text:None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_name ==> <StringField, varchar(50):None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [137]  thread: MainThread output msg:  found model: Comment (table: comments) - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: id ==> <StringField, varchar(50):None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_id ==> <StringField, varchar(50):None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_name ==> <StringField, varchar(50):None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: create_at ==> <FloatField, real:None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_image ==> <StringField, varchar(500):None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: content ==> <TextField, text:None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: blog_id ==> <StringField, varchar(50):None> - [01/Jun/2016 01:25:20]
+levelname:INFO filename: coroweb.py outputNumber: [228]  thread: MainThread output msg:  add static /static/ => /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/static - [01/Jun/2016 01:25:20]
+levelname:INFO filename: app.py outputNumber: [182]  thread: MainThread output msg:  server start at http://127.0.0.1:9000... - [01/Jun/2016 01:25:20]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET / - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:28]
+levelname:INFO filename: coroweb.py outputNumber: [215]  thread: MainThread output msg:  call with args: {'request': <Request GET / >} - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = {'blogs': [{'created_at': 1464715408.5148, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464711928.514807, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708328.514809, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'} - [01/Jun/2016 01:25:28]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:28 +0000] "GET / HTTP/1.1" 200 5154 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/css/uikit.min.css - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = <StreamResponse OK GET /static/css/uikit.min.css > - [01/Jun/2016 01:25:28]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:28 +0000] "GET /static/css/uikit.min.css HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/css/uikit.gradient.min.css - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = <StreamResponse OK GET /static/css/uikit.gradient.min.css > - [01/Jun/2016 01:25:28]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:28 +0000] "GET /static/css/uikit.gradient.min.css HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/uikit.min.js - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = <StreamResponse OK GET /static/js/uikit.min.js > - [01/Jun/2016 01:25:28]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:28 +0000] "GET /static/js/uikit.min.js HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/css/awesome.css - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = <StreamResponse OK GET /static/css/awesome.css > - [01/Jun/2016 01:25:28]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:28 +0000] "GET /static/css/awesome.css HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/jquery.min.js - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = <StreamResponse OK GET /static/js/jquery.min.js > - [01/Jun/2016 01:25:28]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:28 +0000] "GET /static/js/jquery.min.js HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/md5.js - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:28]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:28 +0000] "GET /static/js/md5.js HTTP/1.1" 404 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/awesome.js - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = <StreamResponse OK GET /static/js/awesome.js > - [01/Jun/2016 01:25:28]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:28 +0000] "GET /static/js/awesome.js HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/fonts/fontawesome-webfont.woff2 - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = <StreamResponse OK GET /static/fonts/fontawesome-webfont.woff2 > - [01/Jun/2016 01:25:28]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:28 +0000] "GET /static/fonts/fontawesome-webfont.woff2 HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:28]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /manage/blogs - [01/Jun/2016 01:25:32]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:32]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:32 +0000] "GET /manage/blogs HTTP/1.1" 404 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:32]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /favicon.ico - [01/Jun/2016 01:25:33]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:33]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:33 +0000] "GET /favicon.ico HTTP/1.1" 404 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:33]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET / - [01/Jun/2016 01:25:35]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:35]
+levelname:INFO filename: coroweb.py outputNumber: [215]  thread: MainThread output msg:  call with args: {'request': <Request GET / >} - [01/Jun/2016 01:25:35]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = {'blogs': [{'created_at': 1464715415.436259, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464711935.436265, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708335.436268, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'} - [01/Jun/2016 01:25:35]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:35 +0000] "GET / HTTP/1.1" 200 5156 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:35]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/md5.js - [01/Jun/2016 01:25:35]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:35]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:35 +0000] "GET /static/js/md5.js HTTP/1.1" 404 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:35]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET / - [01/Jun/2016 01:25:37]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:37]
+levelname:INFO filename: coroweb.py outputNumber: [215]  thread: MainThread output msg:  call with args: {'request': <Request GET / >} - [01/Jun/2016 01:25:37]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = {'blogs': [{'created_at': 1464715417.171222, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464711937.171229, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708337.171231, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'} - [01/Jun/2016 01:25:37]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:37 +0000] "GET / HTTP/1.1" 200 5156 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:37]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/md5.js - [01/Jun/2016 01:25:37]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:37]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:37 +0000] "GET /static/js/md5.js HTTP/1.1" 404 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:37]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET / - [01/Jun/2016 01:25:37]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:37]
+levelname:INFO filename: coroweb.py outputNumber: [215]  thread: MainThread output msg:  call with args: {'request': <Request GET / >} - [01/Jun/2016 01:25:37]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = {'blogs': [{'created_at': 1464715417.871465, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464711937.871472, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708337.871475, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'} - [01/Jun/2016 01:25:37]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:37 +0000] "GET / HTTP/1.1" 200 5156 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:37]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/md5.js - [01/Jun/2016 01:25:37]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:37]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:37 +0000] "GET /static/js/md5.js HTTP/1.1" 404 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:37]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET / - [01/Jun/2016 01:25:38]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:38]
+levelname:INFO filename: coroweb.py outputNumber: [215]  thread: MainThread output msg:  call with args: {'request': <Request GET / >} - [01/Jun/2016 01:25:38]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = {'blogs': [{'created_at': 1464715418.442362, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464711938.442369, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708338.442371, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'} - [01/Jun/2016 01:25:38]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:38 +0000] "GET / HTTP/1.1" 200 5156 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:38]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/md5.js - [01/Jun/2016 01:25:38]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:38]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:38 +0000] "GET /static/js/md5.js HTTP/1.1" 404 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:38]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET / - [01/Jun/2016 01:25:39]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:39]
+levelname:INFO filename: coroweb.py outputNumber: [215]  thread: MainThread output msg:  call with args: {'request': <Request GET / >} - [01/Jun/2016 01:25:39]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = {'blogs': [{'created_at': 1464715419.003541, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464711939.003549, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708339.003551, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'} - [01/Jun/2016 01:25:39]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:39 +0000] "GET / HTTP/1.1" 200 5156 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:39]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/md5.js - [01/Jun/2016 01:25:39]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:39]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:39 +0000] "GET /static/js/md5.js HTTP/1.1" 404 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:39]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET / - [01/Jun/2016 01:25:39]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:39]
+levelname:INFO filename: coroweb.py outputNumber: [215]  thread: MainThread output msg:  call with args: {'request': <Request GET / >} - [01/Jun/2016 01:25:39]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = {'blogs': [{'created_at': 1464715419.593043, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464711939.59305, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708339.593052, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'} - [01/Jun/2016 01:25:39]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:39 +0000] "GET / HTTP/1.1" 200 5155 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:39]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/md5.js - [01/Jun/2016 01:25:39]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:39]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:39 +0000] "GET /static/js/md5.js HTTP/1.1" 404 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:39]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET / - [01/Jun/2016 01:25:40]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:40]
+levelname:INFO filename: coroweb.py outputNumber: [215]  thread: MainThread output msg:  call with args: {'request': <Request GET / >} - [01/Jun/2016 01:25:40]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = {'blogs': [{'created_at': 1464715420.195361, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464711940.195373, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708340.195376, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'} - [01/Jun/2016 01:25:40]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:40 +0000] "GET / HTTP/1.1" 200 5156 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:40]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/md5.js - [01/Jun/2016 01:25:40]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:40]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:40 +0000] "GET /static/js/md5.js HTTP/1.1" 404 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:40]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /blog/2 - [01/Jun/2016 01:25:49]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:49]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:49 +0000] "GET /blog/2 HTTP/1.1" 404 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:49]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /signin - [01/Jun/2016 01:25:52]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:25:52]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:25:52 +0000] "GET /signin HTTP/1.1" 404 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:25:52]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET / - [01/Jun/2016 01:26:59]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:26:59]
+levelname:INFO filename: coroweb.py outputNumber: [215]  thread: MainThread output msg:  call with args: {'request': <Request GET / >} - [01/Jun/2016 01:26:59]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = {'blogs': [{'created_at': 1464715499.729756, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464712019.729762, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708419.729765, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'} - [01/Jun/2016 01:26:59]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:26:59 +0000] "GET / HTTP/1.1" 200 5154 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:26:59]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/css/uikit.min.css - [01/Jun/2016 01:26:59]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:26:59]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:26:59 +0000] "GET /static/css/uikit.min.css HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:26:59]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/css/uikit.gradient.min.css - [01/Jun/2016 01:26:59]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:26:59]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:26:59 +0000] "GET /static/css/uikit.gradient.min.css HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:26:59]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/css/awesome.css - [01/Jun/2016 01:26:59]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:26:59]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:26:59 +0000] "GET /static/css/awesome.css HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:26:59]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/jquery.min.js - [01/Jun/2016 01:26:59]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:26:59]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:26:59 +0000] "GET /static/js/jquery.min.js HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:26:59]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/awesome.js - [01/Jun/2016 01:26:59]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:26:59]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:26:59 +0000] "GET /static/js/awesome.js HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:26:59]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/md5.js - [01/Jun/2016 01:26:59]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:26:59]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:26:59 +0000] "GET /static/js/md5.js HTTP/1.1" 404 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:26:59]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/uikit.min.js - [01/Jun/2016 01:26:59]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:26:59]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:26:59 +0000] "GET /static/js/uikit.min.js HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:26:59]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/fonts/fontawesome-webfont.woff2 - [01/Jun/2016 01:26:59]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:26:59]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:26:59 +0000] "GET /static/fonts/fontawesome-webfont.woff2 HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:26:59]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET / - [01/Jun/2016 01:30:24]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:30:24]
+levelname:INFO filename: coroweb.py outputNumber: [215]  thread: MainThread output msg:  call with args: {'request': <Request GET / >} - [01/Jun/2016 01:30:24]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = {'blogs': [{'created_at': 1464715704.617217, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464712224.617226, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708624.61723, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'} - [01/Jun/2016 01:30:24]
+levelname:ERROR filename: server.py outputNumber: [200]  thread: MainThread output msg:  Error handling request - [01/Jun/2016 01:30:24]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/aiohttp/server.py", line 266, in start
+    yield from self.handle_request(message, payload)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/aiohttp/web.py", line 90, in handle_request
+    resp = yield from handler(request)
+  File "/Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/app.py", line 74, in logger_fact
+    return (await handler(request))
+  File "/Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/app.py", line 129, in response
+    template).render(**r).encode('utf-8'))
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/templates/blogs.html", line 11, in template
+    <p class="uk-article-meta">发表于{{ blog.created_at|datatime}}</p>
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/environment.py", line 515, in _generate
+    return generate(source, self, name, filename, defer_init=defer_init)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 62, in generate
+    generator.visit(node)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 849, in visit_Template
+    self.blockvisit(block.body, block_frame)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 492, in blockvisit
+    self.visit(node, frame)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 1140, in visit_For
+    self.blockvisit(node.body, loop_frame)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 492, in blockvisit
+    self.visit(node, frame)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 1353, in visit_Output
+    self.visit(argument, frame)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 1565, in visit_Filter
+    self.fail('no filter named %r' % node.name, node.lineno)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 427, in fail
+    raise TemplateAssertionError(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateAssertionError: no filter named 'datatime'
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:30:24 +0000] "GET / HTTP/1.1" 500 170 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:30:24]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET / - [01/Jun/2016 01:30:49]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:30:49]
+levelname:INFO filename: coroweb.py outputNumber: [215]  thread: MainThread output msg:  call with args: {'request': <Request GET / >} - [01/Jun/2016 01:30:49]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = {'blogs': [{'created_at': 1464715729.770047, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464712249.770053, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708649.770055, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'} - [01/Jun/2016 01:30:49]
+levelname:ERROR filename: server.py outputNumber: [200]  thread: MainThread output msg:  Error handling request - [01/Jun/2016 01:30:49]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/aiohttp/server.py", line 266, in start
+    yield from self.handle_request(message, payload)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/aiohttp/web.py", line 90, in handle_request
+    resp = yield from handler(request)
+  File "/Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/app.py", line 74, in logger_fact
+    return (await handler(request))
+  File "/Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/app.py", line 129, in response
+    template).render(**r).encode('utf-8'))
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/templates/blogs.html", line 11, in template
+    <p class="uk-article-meta">发表于{{ blog.created_at|datatime}}</p>
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/environment.py", line 515, in _generate
+    return generate(source, self, name, filename, defer_init=defer_init)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 62, in generate
+    generator.visit(node)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 849, in visit_Template
+    self.blockvisit(block.body, block_frame)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 492, in blockvisit
+    self.visit(node, frame)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 1140, in visit_For
+    self.blockvisit(node.body, loop_frame)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 492, in blockvisit
+    self.visit(node, frame)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 1353, in visit_Output
+    self.visit(argument, frame)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 1565, in visit_Filter
+    self.fail('no filter named %r' % node.name, node.lineno)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 427, in fail
+    raise TemplateAssertionError(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateAssertionError: no filter named 'datatime'
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:30:49 +0000] "GET / HTTP/1.1" 500 170 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:30:49]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET / - [01/Jun/2016 01:30:53]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:30:53]
+levelname:INFO filename: coroweb.py outputNumber: [215]  thread: MainThread output msg:  call with args: {'request': <Request GET / >} - [01/Jun/2016 01:30:53]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = {'blogs': [{'created_at': 1464715733.100487, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464712253.100493, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708653.100495, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'} - [01/Jun/2016 01:30:53]
+levelname:ERROR filename: server.py outputNumber: [200]  thread: MainThread output msg:  Error handling request - [01/Jun/2016 01:30:53]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/aiohttp/server.py", line 266, in start
+    yield from self.handle_request(message, payload)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/aiohttp/web.py", line 90, in handle_request
+    resp = yield from handler(request)
+  File "/Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/app.py", line 74, in logger_fact
+    return (await handler(request))
+  File "/Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/app.py", line 129, in response
+    template).render(**r).encode('utf-8'))
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/templates/blogs.html", line 11, in template
+    <p class="uk-article-meta">发表于{{ blog.created_at|datatime}}</p>
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/environment.py", line 515, in _generate
+    return generate(source, self, name, filename, defer_init=defer_init)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 62, in generate
+    generator.visit(node)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 849, in visit_Template
+    self.blockvisit(block.body, block_frame)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 492, in blockvisit
+    self.visit(node, frame)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 1140, in visit_For
+    self.blockvisit(node.body, loop_frame)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 492, in blockvisit
+    self.visit(node, frame)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 1353, in visit_Output
+    self.visit(argument, frame)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 1565, in visit_Filter
+    self.fail('no filter named %r' % node.name, node.lineno)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 427, in fail
+    raise TemplateAssertionError(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateAssertionError: no filter named 'datatime'
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:30:53 +0000] "GET / HTTP/1.1" 500 170 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:30:53]
+levelname:INFO filename: orm.py outputNumber: [27]  thread: MainThread output msg:  create database connection pool... - [01/Jun/2016 01:31:22]
+levelname:INFO filename: app.py outputNumber: [41]  thread: MainThread output msg:  init jinja2.... - [01/Jun/2016 01:31:22]
+levelname:INFO filename: app.py outputNumber: [56]  thread: MainThread output msg:  set jinja2 template path: /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/templates - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [137]  thread: MainThread output msg:  found model: User (table: users) - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: email ==> <StringField, varchar(50):None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: id ==> <StringField, varchar(50):None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: name ==> <StringField, varchar(50):None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: created_at ==> <FloatField, real:None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: image ==> <StringField, varchar(500):None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: admin ==> <BooleanField, boolean:None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: passwd ==> <StringField, varchar(50):None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [137]  thread: MainThread output msg:  found model: Blog (table: blogs) - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: content ==> <TextField, text:None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: created_at ==> <FloatField, real:None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: summary ==> <StringField, varchar(200):None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: id ==> <StringField, varchar(50):None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: name ==> <StringField, varchar(50):None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_name ==> <StringField, varchar(50):None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_id ==> <StringField, varchar(50):None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_image ==> <StringField, varchar(500):None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [137]  thread: MainThread output msg:  found model: Comment (table: comments) - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_id ==> <StringField, varchar(50):None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: content ==> <TextField, text:None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: id ==> <StringField, varchar(50):None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: blog_id ==> <StringField, varchar(50):None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: create_at ==> <FloatField, real:None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_name ==> <StringField, varchar(50):None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: orm.py outputNumber: [144]  thread: MainThread output msg:  found mapping: user_image ==> <StringField, varchar(500):None> - [01/Jun/2016 01:31:22]
+levelname:INFO filename: coroweb.py outputNumber: [228]  thread: MainThread output msg:  add static /static/ => /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/static - [01/Jun/2016 01:31:22]
+levelname:INFO filename: app.py outputNumber: [182]  thread: MainThread output msg:  server start at http://127.0.0.1:9000... - [01/Jun/2016 01:31:22]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET / - [01/Jun/2016 01:31:26]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:31:26]
+levelname:INFO filename: coroweb.py outputNumber: [215]  thread: MainThread output msg:  call with args: {'request': <Request GET / >} - [01/Jun/2016 01:31:26]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = {'__template__': 'blogs.html', 'blogs': [{'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '1', 'created_at': 1464715766.014722}, {'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '2', 'created_at': 1464712286.014729}, {'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '3', 'created_at': 1464708686.014732}]} - [01/Jun/2016 01:31:26]
+levelname:ERROR filename: server.py outputNumber: [200]  thread: MainThread output msg:  Error handling request - [01/Jun/2016 01:31:26]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/aiohttp/server.py", line 266, in start
+    yield from self.handle_request(message, payload)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/aiohttp/web.py", line 90, in handle_request
+    resp = yield from handler(request)
+  File "/Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/app.py", line 74, in logger_fact
+    return (await handler(request))
+  File "/Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/app.py", line 129, in response
+    template).render(**r).encode('utf-8'))
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/templates/blogs.html", line 11, in template
+    <p class="uk-article-meta">发表于{{ blog.created_at|datatime}}</p>
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/environment.py", line 515, in _generate
+    return generate(source, self, name, filename, defer_init=defer_init)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 62, in generate
+    generator.visit(node)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 849, in visit_Template
+    self.blockvisit(block.body, block_frame)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 492, in blockvisit
+    self.visit(node, frame)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 1140, in visit_For
+    self.blockvisit(node.body, loop_frame)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 492, in blockvisit
+    self.visit(node, frame)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 1353, in visit_Output
+    self.visit(argument, frame)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 1565, in visit_Filter
+    self.fail('no filter named %r' % node.name, node.lineno)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/jinja2/compiler.py", line 427, in fail
+    raise TemplateAssertionError(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateAssertionError: no filter named 'datatime'
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:31:26 +0000] "GET / HTTP/1.1" 500 170 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:31:26]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /favicon.ico - [01/Jun/2016 01:31:26]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:31:26]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:31:26 +0000] "GET /favicon.ico HTTP/1.1" 404 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:31:26]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET / - [01/Jun/2016 01:32:15]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:32:15]
+levelname:INFO filename: coroweb.py outputNumber: [215]  thread: MainThread output msg:  call with args: {'request': <Request GET / >} - [01/Jun/2016 01:32:15]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = {'__template__': 'blogs.html', 'blogs': [{'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '1', 'created_at': 1464715815.775079}, {'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '2', 'created_at': 1464712335.775087}, {'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '3', 'created_at': 1464708735.77509}]} - [01/Jun/2016 01:32:15]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:32:15 +0000] "GET / HTTP/1.1" 200 5133 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:32:15]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/css/uikit.min.css - [01/Jun/2016 01:32:15]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:32:15]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:32:15 +0000] "GET /static/css/uikit.min.css HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:32:15]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/css/uikit.gradient.min.css - [01/Jun/2016 01:32:15]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:32:15]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:32:15 +0000] "GET /static/css/uikit.gradient.min.css HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:32:15]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/css/awesome.css - [01/Jun/2016 01:32:15]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:32:15]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:32:15 +0000] "GET /static/css/awesome.css HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:32:15]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/jquery.min.js - [01/Jun/2016 01:32:15]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:32:15]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:32:15 +0000] "GET /static/js/jquery.min.js HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:32:15]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/md5.js - [01/Jun/2016 01:32:15]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:32:15]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:32:15 +0000] "GET /static/js/md5.js HTTP/1.1" 404 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:32:15]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/uikit.min.js - [01/Jun/2016 01:32:15]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:32:15]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:32:15 +0000] "GET /static/js/uikit.min.js HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:32:15]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/awesome.js - [01/Jun/2016 01:32:15]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:32:15]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:32:15 +0000] "GET /static/js/awesome.js HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:32:15]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/fonts/fontawesome-webfont.woff2 - [01/Jun/2016 01:32:15]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:32:15]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:32:15 +0000] "GET /static/fonts/fontawesome-webfont.woff2 HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:32:15]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET / - [01/Jun/2016 01:32:23]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:32:23]
+levelname:INFO filename: coroweb.py outputNumber: [215]  thread: MainThread output msg:  call with args: {'request': <Request GET / >} - [01/Jun/2016 01:32:23]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = {'__template__': 'blogs.html', 'blogs': [{'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '1', 'created_at': 1464715823.552749}, {'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '2', 'created_at': 1464712343.552759}, {'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '3', 'created_at': 1464708743.552763}]} - [01/Jun/2016 01:32:23]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:32:23 +0000] "GET / HTTP/1.1" 200 5133 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:32:23]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/md5.js - [01/Jun/2016 01:32:23]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:32:23]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:32:23 +0000] "GET /static/js/md5.js HTTP/1.1" 404 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:32:23]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET / - [01/Jun/2016 01:32:25]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:32:25]
+levelname:INFO filename: coroweb.py outputNumber: [215]  thread: MainThread output msg:  call with args: {'request': <Request GET / >} - [01/Jun/2016 01:32:25]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = {'__template__': 'blogs.html', 'blogs': [{'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '1', 'created_at': 1464715825.505104}, {'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '2', 'created_at': 1464712345.505112}, {'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '3', 'created_at': 1464708745.505114}]} - [01/Jun/2016 01:32:25]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:32:25 +0000] "GET / HTTP/1.1" 200 5133 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:32:25]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/md5.js - [01/Jun/2016 01:32:25]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:32:25]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:32:25 +0000] "GET /static/js/md5.js HTTP/1.1" 404 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:32:25]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET / - [01/Jun/2016 01:32:26]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:32:26]
+levelname:INFO filename: coroweb.py outputNumber: [215]  thread: MainThread output msg:  call with args: {'request': <Request GET / >} - [01/Jun/2016 01:32:26]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = {'__template__': 'blogs.html', 'blogs': [{'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '1', 'created_at': 1464715826.669992}, {'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '2', 'created_at': 1464712346.669998}, {'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '3', 'created_at': 1464708746.670001}]} - [01/Jun/2016 01:32:26]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:32:26 +0000] "GET / HTTP/1.1" 200 5133 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:32:26]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/md5.js - [01/Jun/2016 01:32:26]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:32:26]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:32:26 +0000] "GET /static/js/md5.js HTTP/1.1" 404 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:32:26]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET / - [01/Jun/2016 01:34:15]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:34:15]
+levelname:INFO filename: coroweb.py outputNumber: [215]  thread: MainThread output msg:  call with args: {'request': <Request GET / >} - [01/Jun/2016 01:34:15]
+levelname:INFO filename: app.py outputNumber: [96]  thread: MainThread output msg:  response result = {'__template__': 'blogs.html', 'blogs': [{'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '1', 'created_at': 1464715935.602447}, {'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '2', 'created_at': 1464712455.602454}, {'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '3', 'created_at': 1464708855.602456}]} - [01/Jun/2016 01:34:15]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:34:15 +0000] "GET / HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:34:15]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/css/uikit.min.css - [01/Jun/2016 01:34:15]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:34:15]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:34:15 +0000] "GET /static/css/uikit.min.css HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:34:15]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/css/uikit.gradient.min.css - [01/Jun/2016 01:34:15]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:34:15]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:34:15 +0000] "GET /static/css/uikit.gradient.min.css HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:34:15]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/css/awesome.css - [01/Jun/2016 01:34:15]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:34:15]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:34:15 +0000] "GET /static/css/awesome.css HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:34:15]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/jquery.min.js - [01/Jun/2016 01:34:15]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:34:15]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:34:15 +0000] "GET /static/js/jquery.min.js HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:34:15]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/md5.js - [01/Jun/2016 01:34:15]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:34:15]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:34:15 +0000] "GET /static/js/md5.js HTTP/1.1" 404 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:34:15]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/awesome.js - [01/Jun/2016 01:34:15]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:34:15]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:34:15 +0000] "GET /static/js/awesome.js HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:34:15]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/js/uikit.min.js - [01/Jun/2016 01:34:15]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:34:15]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:34:15 +0000] "GET /static/js/uikit.min.js HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:34:15]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /static/fonts/fontawesome-webfont.woff2 - [01/Jun/2016 01:34:15]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:34:15]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:34:15 +0000] "GET /static/fonts/fontawesome-webfont.woff2 HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:34:15]
+levelname:INFO filename: app.py outputNumber: [72]  thread: MainThread output msg:  Request: GET /manage/ - [01/Jun/2016 01:34:24]
+levelname:INFO filename: app.py outputNumber: [93]  thread: MainThread output msg:  Response handler... - [01/Jun/2016 01:34:24]
+levelname:INFO filename: helpers.py outputNumber: [365]  thread: MainThread output msg:  127.0.0.1 - - [31/May/2016:17:34:24 +0000] "GET /manage/ HTTP/1.1" 404 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" - [01/Jun/2016 01:34:24]

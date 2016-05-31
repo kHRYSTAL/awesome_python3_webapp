@@ -600,3 +600,329 @@
 2016-05-31 21:01:54,037 - orm.py:23 - server_info - SQL: select `id`, `passwd`,`name`,`email`,`admin`,`image`,`created_at` from `users`, ARGS: []
 2016-05-31 21:01:54,038 - orm.py:57 - server_info - rows returned: 2
 2016-05-31 21:01:54,038 - app.py:96 - server_info - response result = {'__template__': 'test.html', 'users': [{'passwd': 'yyg1990918', 'admin': 0, 'email': 'khrystal0918@qq.com', 'image': 'about:blank', 'name': 'kHRYSTAL', 'id': '0014646843474309782d4d333004dc1b53af5483904cc4a000', 'created_at': 1464684347.42998}, {'passwd': 'yyg1990918', 'admin': 0, 'email': '723526676@qq.com', 'image': 'about:blank', 'name': 'Matt', 'id': '00146469823107184645f05ce95426c9d015bd8bbb99d8d000', 'created_at': 1464698231.07143}]}
+2016-06-01 00:39:20,182 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 00:39:20,188 - app.py:41 - server_info - init jinja2....
+2016-06-01 00:39:20,188 - app.py:56 - server_info - set jinja2 template path: /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/templates
+2016-06-01 00:39:20,189 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 00:39:20,190 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 00:39:20,190 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 00:39:20,190 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 00:39:20,190 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 00:39:20,190 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 00:39:20,190 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 00:39:20,190 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 00:39:20,190 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 00:39:20,190 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 00:39:20,190 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 00:39:20,191 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 00:39:20,191 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 00:39:20,191 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 00:39:20,191 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 00:39:20,191 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 00:39:20,191 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 00:39:20,191 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 00:39:20,191 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 00:39:20,191 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 00:39:20,191 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 00:39:20,191 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 00:39:20,192 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 00:39:20,192 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 00:39:20,192 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 00:39:20,192 - coroweb.py:228 - server_info - add static /static/ => /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/static
+2016-06-01 00:40:04,606 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 00:40:04,611 - app.py:41 - server_info - init jinja2....
+2016-06-01 00:40:04,611 - app.py:56 - server_info - set jinja2 template path: /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/templates
+2016-06-01 00:40:04,611 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 00:40:04,612 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 00:40:04,612 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 00:40:04,612 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 00:40:04,612 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 00:40:04,612 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 00:40:04,612 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 00:40:04,612 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 00:40:04,612 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 00:40:04,612 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 00:40:04,612 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 00:40:04,612 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 00:40:04,613 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 00:40:04,613 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 00:40:04,613 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 00:40:04,613 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 00:40:04,613 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 00:40:04,613 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 00:40:04,613 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 00:40:04,613 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 00:40:04,613 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 00:40:04,613 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 00:40:04,613 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 00:40:04,613 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 00:40:04,614 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 00:40:04,614 - coroweb.py:228 - server_info - add static /static/ => /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/static
+2016-06-01 00:40:11,088 - app.py:72 - server_info - Request: GET /
+2016-06-01 00:40:11,088 - app.py:93 - server_info - Response handler...
+2016-06-01 00:40:11,089 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 00:40:11,089 - orm.py:23 - server_info - SQL: select `id`, `email`,`passwd`,`created_at`,`image`,`name`,`admin` from `users`, ARGS: []
+2016-06-01 00:40:11,090 - orm.py:57 - server_info - rows returned: 2
+2016-06-01 00:40:11,090 - app.py:96 - server_info - response result = {'users': [{'email': 'khrystal0918@qq.com', 'passwd': 'yyg1990918', 'id': '0014646843474309782d4d333004dc1b53af5483904cc4a000', 'created_at': 1464684347.42998, 'admin': 0, 'name': 'kHRYSTAL', 'image': 'about:blank'}, {'email': '723526676@qq.com', 'passwd': 'yyg1990918', 'id': '00146469823107184645f05ce95426c9d015bd8bbb99d8d000', 'created_at': 1464698231.07143, 'admin': 0, 'name': 'Matt', 'image': 'about:blank'}], '__template__': 'test.html'}
+2016-06-01 01:24:57,672 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 01:24:57,677 - app.py:41 - server_info - init jinja2....
+2016-06-01 01:24:57,677 - app.py:56 - server_info - set jinja2 template path: /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/templates
+2016-06-01 01:24:57,679 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 01:24:57,679 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 01:24:57,679 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 01:24:57,680 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 01:24:57,680 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 01:24:57,680 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 01:24:57,680 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 01:24:57,680 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 01:24:57,680 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 01:24:57,680 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 01:24:57,680 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 01:24:57,680 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 01:24:57,680 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 01:24:57,680 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 01:24:57,681 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 01:24:57,681 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 01:24:57,681 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 01:24:57,681 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 01:24:57,681 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 01:24:57,681 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 01:24:57,681 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 01:24:57,681 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 01:24:57,681 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 01:24:57,681 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 01:24:57,681 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 01:24:57,682 - coroweb.py:228 - server_info - add static /static/ => /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/static
+2016-06-01 01:25:20,417 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 01:25:20,423 - app.py:41 - server_info - init jinja2....
+2016-06-01 01:25:20,423 - app.py:56 - server_info - set jinja2 template path: /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/templates
+2016-06-01 01:25:20,424 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 01:25:20,424 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 01:25:20,424 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 01:25:20,424 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 01:25:20,424 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 01:25:20,424 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 01:25:20,424 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 01:25:20,424 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 01:25:20,424 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 01:25:20,425 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 01:25:20,425 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 01:25:20,425 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 01:25:20,425 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 01:25:20,425 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 01:25:20,425 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 01:25:20,425 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 01:25:20,425 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 01:25:20,425 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 01:25:20,425 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 01:25:20,425 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 01:25:20,426 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 01:25:20,426 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 01:25:20,426 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 01:25:20,426 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 01:25:20,426 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 01:25:20,427 - coroweb.py:228 - server_info - add static /static/ => /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/static
+2016-06-01 01:25:28,514 - app.py:72 - server_info - Request: GET /
+2016-06-01 01:25:28,514 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:28,514 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 01:25:28,514 - app.py:96 - server_info - response result = {'blogs': [{'created_at': 1464715408.5148, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464711928.514807, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708328.514809, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'}
+2016-06-01 01:25:28,582 - app.py:72 - server_info - Request: GET /static/css/uikit.min.css
+2016-06-01 01:25:28,583 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:28,583 - app.py:96 - server_info - response result = <StreamResponse OK GET /static/css/uikit.min.css >
+2016-06-01 01:25:28,584 - app.py:72 - server_info - Request: GET /static/css/uikit.gradient.min.css
+2016-06-01 01:25:28,584 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:28,585 - app.py:96 - server_info - response result = <StreamResponse OK GET /static/css/uikit.gradient.min.css >
+2016-06-01 01:25:28,587 - app.py:72 - server_info - Request: GET /static/js/uikit.min.js
+2016-06-01 01:25:28,587 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:28,588 - app.py:96 - server_info - response result = <StreamResponse OK GET /static/js/uikit.min.js >
+2016-06-01 01:25:28,589 - app.py:72 - server_info - Request: GET /static/css/awesome.css
+2016-06-01 01:25:28,589 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:28,590 - app.py:96 - server_info - response result = <StreamResponse OK GET /static/css/awesome.css >
+2016-06-01 01:25:28,590 - app.py:72 - server_info - Request: GET /static/js/jquery.min.js
+2016-06-01 01:25:28,590 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:28,591 - app.py:96 - server_info - response result = <StreamResponse OK GET /static/js/jquery.min.js >
+2016-06-01 01:25:28,592 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 01:25:28,592 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:28,594 - app.py:72 - server_info - Request: GET /static/js/awesome.js
+2016-06-01 01:25:28,594 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:28,595 - app.py:96 - server_info - response result = <StreamResponse OK GET /static/js/awesome.js >
+2016-06-01 01:25:28,676 - app.py:72 - server_info - Request: GET /static/fonts/fontawesome-webfont.woff2
+2016-06-01 01:25:28,677 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:28,677 - app.py:96 - server_info - response result = <StreamResponse OK GET /static/fonts/fontawesome-webfont.woff2 >
+2016-06-01 01:25:32,878 - app.py:72 - server_info - Request: GET /manage/blogs
+2016-06-01 01:25:32,878 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:33,081 - app.py:72 - server_info - Request: GET /favicon.ico
+2016-06-01 01:25:33,081 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:35,435 - app.py:72 - server_info - Request: GET /
+2016-06-01 01:25:35,436 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:35,436 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 01:25:35,436 - app.py:96 - server_info - response result = {'blogs': [{'created_at': 1464715415.436259, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464711935.436265, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708335.436268, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'}
+2016-06-01 01:25:35,455 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 01:25:35,456 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:37,170 - app.py:72 - server_info - Request: GET /
+2016-06-01 01:25:37,171 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:37,171 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 01:25:37,171 - app.py:96 - server_info - response result = {'blogs': [{'created_at': 1464715417.171222, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464711937.171229, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708337.171231, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'}
+2016-06-01 01:25:37,191 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 01:25:37,191 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:37,871 - app.py:72 - server_info - Request: GET /
+2016-06-01 01:25:37,871 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:37,871 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 01:25:37,871 - app.py:96 - server_info - response result = {'blogs': [{'created_at': 1464715417.871465, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464711937.871472, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708337.871475, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'}
+2016-06-01 01:25:37,893 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 01:25:37,894 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:38,441 - app.py:72 - server_info - Request: GET /
+2016-06-01 01:25:38,442 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:38,442 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 01:25:38,442 - app.py:96 - server_info - response result = {'blogs': [{'created_at': 1464715418.442362, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464711938.442369, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708338.442371, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'}
+2016-06-01 01:25:38,462 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 01:25:38,462 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:39,003 - app.py:72 - server_info - Request: GET /
+2016-06-01 01:25:39,003 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:39,003 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 01:25:39,003 - app.py:96 - server_info - response result = {'blogs': [{'created_at': 1464715419.003541, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464711939.003549, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708339.003551, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'}
+2016-06-01 01:25:39,022 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 01:25:39,023 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:39,592 - app.py:72 - server_info - Request: GET /
+2016-06-01 01:25:39,592 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:39,592 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 01:25:39,593 - app.py:96 - server_info - response result = {'blogs': [{'created_at': 1464715419.593043, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464711939.59305, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708339.593052, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'}
+2016-06-01 01:25:39,612 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 01:25:39,612 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:40,194 - app.py:72 - server_info - Request: GET /
+2016-06-01 01:25:40,195 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:40,195 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 01:25:40,195 - app.py:96 - server_info - response result = {'blogs': [{'created_at': 1464715420.195361, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464711940.195373, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708340.195376, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'}
+2016-06-01 01:25:40,217 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 01:25:40,217 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:49,232 - app.py:72 - server_info - Request: GET /blog/2
+2016-06-01 01:25:49,232 - app.py:93 - server_info - Response handler...
+2016-06-01 01:25:52,242 - app.py:72 - server_info - Request: GET /signin
+2016-06-01 01:25:52,242 - app.py:93 - server_info - Response handler...
+2016-06-01 01:26:59,729 - app.py:72 - server_info - Request: GET /
+2016-06-01 01:26:59,729 - app.py:93 - server_info - Response handler...
+2016-06-01 01:26:59,729 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 01:26:59,729 - app.py:96 - server_info - response result = {'blogs': [{'created_at': 1464715499.729756, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464712019.729762, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708419.729765, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'}
+2016-06-01 01:26:59,779 - app.py:72 - server_info - Request: GET /static/css/uikit.min.css
+2016-06-01 01:26:59,779 - app.py:93 - server_info - Response handler...
+2016-06-01 01:26:59,780 - app.py:72 - server_info - Request: GET /static/css/uikit.gradient.min.css
+2016-06-01 01:26:59,780 - app.py:93 - server_info - Response handler...
+2016-06-01 01:26:59,781 - app.py:72 - server_info - Request: GET /static/css/awesome.css
+2016-06-01 01:26:59,781 - app.py:93 - server_info - Response handler...
+2016-06-01 01:26:59,782 - app.py:72 - server_info - Request: GET /static/js/jquery.min.js
+2016-06-01 01:26:59,782 - app.py:93 - server_info - Response handler...
+2016-06-01 01:26:59,783 - app.py:72 - server_info - Request: GET /static/js/awesome.js
+2016-06-01 01:26:59,783 - app.py:93 - server_info - Response handler...
+2016-06-01 01:26:59,784 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 01:26:59,785 - app.py:93 - server_info - Response handler...
+2016-06-01 01:26:59,785 - app.py:72 - server_info - Request: GET /static/js/uikit.min.js
+2016-06-01 01:26:59,785 - app.py:93 - server_info - Response handler...
+2016-06-01 01:26:59,838 - app.py:72 - server_info - Request: GET /static/fonts/fontawesome-webfont.woff2
+2016-06-01 01:26:59,838 - app.py:93 - server_info - Response handler...
+2016-06-01 01:30:24,616 - app.py:72 - server_info - Request: GET /
+2016-06-01 01:30:24,616 - app.py:93 - server_info - Response handler...
+2016-06-01 01:30:24,617 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 01:30:24,617 - app.py:96 - server_info - response result = {'blogs': [{'created_at': 1464715704.617217, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464712224.617226, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708624.61723, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'}
+2016-06-01 01:30:49,769 - app.py:72 - server_info - Request: GET /
+2016-06-01 01:30:49,769 - app.py:93 - server_info - Response handler...
+2016-06-01 01:30:49,769 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 01:30:49,770 - app.py:96 - server_info - response result = {'blogs': [{'created_at': 1464715729.770047, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464712249.770053, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708649.770055, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'}
+2016-06-01 01:30:53,100 - app.py:72 - server_info - Request: GET /
+2016-06-01 01:30:53,100 - app.py:93 - server_info - Response handler...
+2016-06-01 01:30:53,100 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 01:30:53,100 - app.py:96 - server_info - response result = {'blogs': [{'created_at': 1464715733.100487, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464712253.100493, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464708653.100495, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'}
+2016-06-01 01:31:22,102 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 01:31:22,106 - app.py:41 - server_info - init jinja2....
+2016-06-01 01:31:22,106 - app.py:56 - server_info - set jinja2 template path: /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/templates
+2016-06-01 01:31:22,107 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 01:31:22,108 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 01:31:22,108 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 01:31:22,108 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 01:31:22,108 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 01:31:22,108 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 01:31:22,108 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 01:31:22,108 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 01:31:22,108 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 01:31:22,108 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 01:31:22,108 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 01:31:22,108 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 01:31:22,109 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 01:31:22,109 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 01:31:22,109 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 01:31:22,109 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 01:31:22,109 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 01:31:22,109 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 01:31:22,109 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 01:31:22,109 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 01:31:22,110 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 01:31:22,110 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 01:31:22,110 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 01:31:22,110 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 01:31:22,110 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 01:31:22,111 - coroweb.py:228 - server_info - add static /static/ => /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/static
+2016-06-01 01:31:26,014 - app.py:72 - server_info - Request: GET /
+2016-06-01 01:31:26,014 - app.py:93 - server_info - Response handler...
+2016-06-01 01:31:26,014 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 01:31:26,014 - app.py:96 - server_info - response result = {'__template__': 'blogs.html', 'blogs': [{'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '1', 'created_at': 1464715766.014722}, {'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '2', 'created_at': 1464712286.014729}, {'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '3', 'created_at': 1464708686.014732}]}
+2016-06-01 01:31:26,360 - app.py:72 - server_info - Request: GET /favicon.ico
+2016-06-01 01:31:26,360 - app.py:93 - server_info - Response handler...
+2016-06-01 01:32:15,774 - app.py:72 - server_info - Request: GET /
+2016-06-01 01:32:15,774 - app.py:93 - server_info - Response handler...
+2016-06-01 01:32:15,774 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 01:32:15,775 - app.py:96 - server_info - response result = {'__template__': 'blogs.html', 'blogs': [{'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '1', 'created_at': 1464715815.775079}, {'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '2', 'created_at': 1464712335.775087}, {'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '3', 'created_at': 1464708735.77509}]}
+2016-06-01 01:32:15,822 - app.py:72 - server_info - Request: GET /static/css/uikit.min.css
+2016-06-01 01:32:15,822 - app.py:93 - server_info - Response handler...
+2016-06-01 01:32:15,825 - app.py:72 - server_info - Request: GET /static/css/uikit.gradient.min.css
+2016-06-01 01:32:15,825 - app.py:93 - server_info - Response handler...
+2016-06-01 01:32:15,826 - app.py:72 - server_info - Request: GET /static/css/awesome.css
+2016-06-01 01:32:15,827 - app.py:93 - server_info - Response handler...
+2016-06-01 01:32:15,828 - app.py:72 - server_info - Request: GET /static/js/jquery.min.js
+2016-06-01 01:32:15,828 - app.py:93 - server_info - Response handler...
+2016-06-01 01:32:15,829 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 01:32:15,829 - app.py:93 - server_info - Response handler...
+2016-06-01 01:32:15,831 - app.py:72 - server_info - Request: GET /static/js/uikit.min.js
+2016-06-01 01:32:15,831 - app.py:93 - server_info - Response handler...
+2016-06-01 01:32:15,832 - app.py:72 - server_info - Request: GET /static/js/awesome.js
+2016-06-01 01:32:15,832 - app.py:93 - server_info - Response handler...
+2016-06-01 01:32:15,890 - app.py:72 - server_info - Request: GET /static/fonts/fontawesome-webfont.woff2
+2016-06-01 01:32:15,891 - app.py:93 - server_info - Response handler...
+2016-06-01 01:32:23,552 - app.py:72 - server_info - Request: GET /
+2016-06-01 01:32:23,552 - app.py:93 - server_info - Response handler...
+2016-06-01 01:32:23,552 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 01:32:23,552 - app.py:96 - server_info - response result = {'__template__': 'blogs.html', 'blogs': [{'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '1', 'created_at': 1464715823.552749}, {'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '2', 'created_at': 1464712343.552759}, {'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '3', 'created_at': 1464708743.552763}]}
+2016-06-01 01:32:23,575 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 01:32:23,575 - app.py:93 - server_info - Response handler...
+2016-06-01 01:32:25,504 - app.py:72 - server_info - Request: GET /
+2016-06-01 01:32:25,504 - app.py:93 - server_info - Response handler...
+2016-06-01 01:32:25,504 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 01:32:25,505 - app.py:96 - server_info - response result = {'__template__': 'blogs.html', 'blogs': [{'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '1', 'created_at': 1464715825.505104}, {'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '2', 'created_at': 1464712345.505112}, {'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '3', 'created_at': 1464708745.505114}]}
+2016-06-01 01:32:25,574 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 01:32:25,574 - app.py:93 - server_info - Response handler...
+2016-06-01 01:32:26,669 - app.py:72 - server_info - Request: GET /
+2016-06-01 01:32:26,669 - app.py:93 - server_info - Response handler...
+2016-06-01 01:32:26,669 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 01:32:26,670 - app.py:96 - server_info - response result = {'__template__': 'blogs.html', 'blogs': [{'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '1', 'created_at': 1464715826.669992}, {'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '2', 'created_at': 1464712346.669998}, {'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '3', 'created_at': 1464708746.670001}]}
+2016-06-01 01:32:26,689 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 01:32:26,689 - app.py:93 - server_info - Response handler...
+2016-06-01 01:34:15,602 - app.py:72 - server_info - Request: GET /
+2016-06-01 01:34:15,602 - app.py:93 - server_info - Response handler...
+2016-06-01 01:34:15,602 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 01:34:15,602 - app.py:96 - server_info - response result = {'__template__': 'blogs.html', 'blogs': [{'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '1', 'created_at': 1464715935.602447}, {'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '2', 'created_at': 1464712455.602454}, {'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '3', 'created_at': 1464708855.602456}]}
+2016-06-01 01:34:15,655 - app.py:72 - server_info - Request: GET /static/css/uikit.min.css
+2016-06-01 01:34:15,655 - app.py:93 - server_info - Response handler...
+2016-06-01 01:34:15,656 - app.py:72 - server_info - Request: GET /static/css/uikit.gradient.min.css
+2016-06-01 01:34:15,656 - app.py:93 - server_info - Response handler...
+2016-06-01 01:34:15,657 - app.py:72 - server_info - Request: GET /static/css/awesome.css
+2016-06-01 01:34:15,657 - app.py:93 - server_info - Response handler...
+2016-06-01 01:34:15,658 - app.py:72 - server_info - Request: GET /static/js/jquery.min.js
+2016-06-01 01:34:15,658 - app.py:93 - server_info - Response handler...
+2016-06-01 01:34:15,659 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 01:34:15,659 - app.py:93 - server_info - Response handler...
+2016-06-01 01:34:15,661 - app.py:72 - server_info - Request: GET /static/js/awesome.js
+2016-06-01 01:34:15,661 - app.py:93 - server_info - Response handler...
+2016-06-01 01:34:15,662 - app.py:72 - server_info - Request: GET /static/js/uikit.min.js
+2016-06-01 01:34:15,662 - app.py:93 - server_info - Response handler...
+2016-06-01 01:34:15,723 - app.py:72 - server_info - Request: GET /static/fonts/fontawesome-webfont.woff2
+2016-06-01 01:34:15,723 - app.py:93 - server_info - Response handler...
+2016-06-01 01:34:24,636 - app.py:72 - server_info - Request: GET /manage/
+2016-06-01 01:34:24,636 - app.py:93 - server_info - Response handler...
