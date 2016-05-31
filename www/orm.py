@@ -223,14 +223,15 @@ class Model(dict, metaclass=ModelMetaclass):
         return [cls(**r) for r in rs]
 
     @classmethod
-    async def findNumber(cls, selectField, where=None, args=None): # 获取行数
-        ' find number by select and where. '
+    async def findNumber(cls, selectField, where=None, args=None):  # 获取行数
+        # find number by select and where.
+        # 'select count(account_id) as num from account'
         sql = ['select %s as `_num_` from `%s`' % (selectField, cls.__table__)]
         # 这里的 _num_ 为别名，任何客户端都可以按照这个名称引用这个列，就像它是个实际的列一样
         if where:
             sql.append('where')
             sql.append(where)
-        rs = await select(' '.join(sql), args, 1) #  size = 1, 表示只取一行数据
+        rs = await select(' '.join(sql), args, 1)  # size = 1, 表示只取一行数据
         if len(rs) == 0:
             return None
         return rs[0].get('_num_', None)
@@ -241,7 +242,7 @@ class Model(dict, metaclass=ModelMetaclass):
     def find(cls, pk):
         # classmethod表示参数cls被绑定到类的类型对象(在这里即为<class '__main__.User'> )，
         # 而不是实例对象
-        'find object by primary key.'
+        #find object by primary key.
         rs = yield from select('%s where `%s` = ?' % (cls.__select__, cls.__primary_key__), [pk], 1)
         if len(rs) == 0:
             return None
@@ -251,7 +252,7 @@ class Model(dict, metaclass=ModelMetaclass):
 
     @asyncio.coroutine
     def save(self):
-        args = list(map(self.getValueOrDefault, self.__fields__)) # args表示要插入的数据
+        args = list(map(self.getValueOrDefault, self.__fields__))  # args表示要插入的数据
         args.append(self.getValueOrDefault(self.__primary_key__))
         rows = yield from execute(self.__insert__, args)
         if rows != 1:
