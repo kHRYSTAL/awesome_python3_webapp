@@ -29,7 +29,7 @@ class Dict(dict):
         try:
             return self[item]
         except KeyError:
-            raise AttributeError(r"'Dict' object has no attribute '%s' " % key)
+            raise AttributeError(r"'Dict' object has no attribute '%s' " % item)
 
     def __setattr__(self, key, value):
         self[key] = value
@@ -52,7 +52,7 @@ def toDict(d):
     D = Dict()
     for k,v in d.items():
         D[k] = toDict(v) if isinstance(v, dict) else v
-        return D
+    return D
 
 try:
     configs = merge(config_default.configs, config_override.configs)

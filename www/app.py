@@ -15,9 +15,10 @@
 """
 
 import logging;
-
+from www.config import configs
 from jinja2 import Environment, FileSystemLoader
 
+from www import orm
 from www.coroweb import add_routes, add_static
 
 logging.basicConfig(level=logging.INFO,
@@ -120,7 +121,7 @@ async def response_factory(app, handler):
                 resp.content_type = 'application/json'
                 return resp
             else:
-                r['__user__'] = request.__user__
+                #r['__user__'] = request.__user__
                 # 在__base__.html中会根据__user__设置用户相关信息
                 # 如果有'__template__'为key的值，则说明要套用jinja2的模板，'__template__'Key对应的为模板文件名
                 # 得到模板文件然后用**r去渲染render
@@ -160,7 +161,7 @@ def datetime_filter(t):
 
 
 async def init(loop):
-    app = web.Application(loop=loop)
+    await orm.create_pool(loop=loop, **configs.db)
     # app.router.add_route('GET', '/', index)
     # middlewares(中间件)设置3个中间处理函数(都是装饰器)
     # middlewares中的每个factory接受两个参数，app 和 handler(即middlewares中的下一个handler)

@@ -10,24 +10,15 @@
 @contact: khrystal0918@gmail.com
 @site: https://github.com/kHRYSTAL
 @software: PyCharm
-@file: handlers.py
-@time: 16/5/31 下午6:49
+@file: test04.py
+@time: 16/5/31 下午8:03
 """
-import re
-
-import asyncio
-from www.coroweb import get
 from www.models import User
 
 
-@get('/')
-@asyncio.coroutine
-def index(request):
+def getUsers():
     users = yield from User.findAll()
-    return {
-        '__template__': 'test.html',
-        'users': users
-    }
+    print(users)
 
 
 if __name__ == '__main__':

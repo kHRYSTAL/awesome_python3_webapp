@@ -20,8 +20,8 @@ from www import orm
 
 @asyncio.coroutine
 def test(loop):
-    yield from orm.create_pool(loop=loop, user='www-data', password='www-data', db='awesome')
-    u=User(name='kHRYSTAL', email='khrystal0918@qq.com', passwd='yyg1990918', image='about:blank')
+    yield from orm.create_pool(loop=loop, user='www-data', password='www-data', database='awesome')
+    u=User(name='Matt', email='723526676@qq.com', passwd='yyg1990918', image='about:blank')
     yield from u.save()
 
 loop = asyncio.get_event_loop()

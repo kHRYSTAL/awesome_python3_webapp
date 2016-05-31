@@ -213,7 +213,6 @@ class RequestHandler(object):
 
         # 以上代码均是为了获取调用参数
         logger.info('call with args: %s' % str(request_content))
-        print('call with args: %s' % str(request_content))
 
         try:
             r = yield from self._func(**request_content)
