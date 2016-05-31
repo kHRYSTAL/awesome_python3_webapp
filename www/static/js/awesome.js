@@ -1,6 +1,5 @@
-/**
- * Created by kHRYSTAL on 16/6/1.
- */
+// awesome.js
+
 // patch for lower-version IE:
 
 if (! window.console) {

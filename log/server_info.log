@@ -926,3 +926,978 @@
 2016-06-01 01:34:15,723 - app.py:93 - server_info - Response handler...
 2016-06-01 01:34:24,636 - app.py:72 - server_info - Request: GET /manage/
 2016-06-01 01:34:24,636 - app.py:93 - server_info - Response handler...
+2016-06-01 01:38:37,264 - app.py:72 - server_info - Request: GET /
+2016-06-01 01:38:37,264 - app.py:93 - server_info - Response handler...
+2016-06-01 01:38:37,264 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 01:38:37,265 - app.py:96 - server_info - response result = {'__template__': 'blogs.html', 'blogs': [{'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '1', 'created_at': 1464716197.264996}, {'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '2', 'created_at': 1464712717.265003}, {'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '3', 'created_at': 1464709117.265005}]}
+2016-06-01 01:38:37,309 - app.py:72 - server_info - Request: GET /static/css/uikit.min.css
+2016-06-01 01:38:37,309 - app.py:93 - server_info - Response handler...
+2016-06-01 01:38:37,311 - app.py:72 - server_info - Request: GET /static/css/uikit.gradient.min.css
+2016-06-01 01:38:37,311 - app.py:93 - server_info - Response handler...
+2016-06-01 01:38:37,313 - app.py:72 - server_info - Request: GET /static/css/awesome.css
+2016-06-01 01:38:37,313 - app.py:93 - server_info - Response handler...
+2016-06-01 01:38:37,314 - app.py:72 - server_info - Request: GET /static/js/jquery.min.js
+2016-06-01 01:38:37,314 - app.py:93 - server_info - Response handler...
+2016-06-01 01:38:37,316 - app.py:72 - server_info - Request: GET /static/js/uikit.min.js
+2016-06-01 01:38:37,316 - app.py:93 - server_info - Response handler...
+2016-06-01 01:38:37,317 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 01:38:37,317 - app.py:93 - server_info - Response handler...
+2016-06-01 01:38:37,318 - app.py:72 - server_info - Request: GET /static/js/awesome.js
+2016-06-01 01:38:37,318 - app.py:93 - server_info - Response handler...
+2016-06-01 01:38:37,388 - app.py:72 - server_info - Request: GET /static/fonts/fontawesome-webfont.woff2
+2016-06-01 01:38:37,389 - app.py:93 - server_info - Response handler...
+2016-06-01 01:38:39,265 - app.py:72 - server_info - Request: GET /
+2016-06-01 01:38:39,266 - app.py:93 - server_info - Response handler...
+2016-06-01 01:38:39,266 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 01:38:39,266 - app.py:96 - server_info - response result = {'__template__': 'blogs.html', 'blogs': [{'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '1', 'created_at': 1464716199.266287}, {'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '2', 'created_at': 1464712719.266293}, {'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '3', 'created_at': 1464709119.266296}]}
+2016-06-01 01:38:39,294 - app.py:72 - server_info - Request: GET /static/css/uikit.min.css
+2016-06-01 01:38:39,294 - app.py:93 - server_info - Response handler...
+2016-06-01 01:38:39,296 - app.py:72 - server_info - Request: GET /static/css/uikit.gradient.min.css
+2016-06-01 01:38:39,296 - app.py:93 - server_info - Response handler...
+2016-06-01 01:38:39,296 - app.py:72 - server_info - Request: GET /static/css/awesome.css
+2016-06-01 01:38:39,297 - app.py:93 - server_info - Response handler...
+2016-06-01 01:38:39,297 - app.py:72 - server_info - Request: GET /static/js/jquery.min.js
+2016-06-01 01:38:39,298 - app.py:93 - server_info - Response handler...
+2016-06-01 01:38:39,298 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 01:38:39,298 - app.py:93 - server_info - Response handler...
+2016-06-01 01:38:39,301 - app.py:72 - server_info - Request: GET /static/js/uikit.min.js
+2016-06-01 01:38:39,301 - app.py:93 - server_info - Response handler...
+2016-06-01 01:38:39,302 - app.py:72 - server_info - Request: GET /static/js/awesome.js
+2016-06-01 01:38:39,302 - app.py:93 - server_info - Response handler...
+2016-06-01 01:38:39,341 - app.py:72 - server_info - Request: GET /static/fonts/fontawesome-webfont.woff2
+2016-06-01 01:38:39,341 - app.py:93 - server_info - Response handler...
+2016-06-01 01:50:54,776 - app.py:72 - server_info - Request: GET /
+2016-06-01 01:50:54,777 - app.py:93 - server_info - Response handler...
+2016-06-01 01:50:54,777 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 01:50:54,777 - app.py:96 - server_info - response result = {'__template__': 'blogs.html', 'blogs': [{'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '1', 'created_at': 1464716934.77736}, {'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '2', 'created_at': 1464713454.777367}, {'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'id': '3', 'created_at': 1464709854.777369}]}
+2016-06-01 01:50:54,824 - app.py:72 - server_info - Request: GET /static/css/awesome.css
+2016-06-01 01:50:54,824 - app.py:93 - server_info - Response handler...
+2016-06-01 01:50:54,825 - app.py:72 - server_info - Request: GET /static/js/jquery.min.js
+2016-06-01 01:50:54,826 - app.py:93 - server_info - Response handler...
+2016-06-01 01:50:54,827 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 01:50:54,827 - app.py:93 - server_info - Response handler...
+2016-06-01 01:50:54,828 - app.py:72 - server_info - Request: GET /static/js/awesome.js
+2016-06-01 01:50:54,828 - app.py:93 - server_info - Response handler...
+2016-06-01 02:30:55,820 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 02:30:55,826 - app.py:41 - server_info - init jinja2....
+2016-06-01 02:30:55,826 - app.py:56 - server_info - set jinja2 template path: /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/templates
+2016-06-01 02:30:55,829 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 02:30:55,829 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 02:30:55,829 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 02:30:55,829 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 02:30:55,829 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 02:30:55,829 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 02:30:55,829 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 02:30:55,830 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 02:30:55,830 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 02:30:55,830 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 02:30:55,830 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 02:30:55,830 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 02:30:55,830 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 02:30:55,830 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 02:30:55,830 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 02:30:55,830 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 02:30:55,831 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 02:30:55,831 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 02:30:55,831 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 02:30:55,831 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 02:30:55,831 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 02:30:55,831 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 02:30:55,831 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 02:30:55,831 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 02:30:55,831 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 02:30:55,832 - coroweb.py:238 - server_info - set coroutine: api_register_user
+2016-06-01 02:30:55,832 - coroweb.py:241 - server_info - add route POST /api/users => api_register_user(email,name,passwd)
+2016-06-01 02:30:55,833 - coroweb.py:238 - server_info - set coroutine: authenticate
+2016-06-01 02:30:55,833 - coroweb.py:241 - server_info - add route POST /api/authenticate => authenticate(email,passwd)
+2016-06-01 02:30:55,833 - coroweb.py:238 - server_info - set coroutine: register
+2016-06-01 02:30:55,833 - coroweb.py:241 - server_info - add route GET /register => register()
+2016-06-01 02:30:55,834 - coroweb.py:238 - server_info - set coroutine: signin
+2016-06-01 02:30:55,834 - coroweb.py:241 - server_info - add route GET /signin => signin()
+2016-06-01 02:30:55,834 - coroweb.py:238 - server_info - set coroutine: signout
+2016-06-01 02:30:55,834 - coroweb.py:241 - server_info - add route GET /signout => signout(request)
+2016-06-01 02:30:55,834 - coroweb.py:228 - server_info - add static /static/ => /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/static
+2016-06-01 02:31:09,484 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 02:31:09,488 - app.py:41 - server_info - init jinja2....
+2016-06-01 02:31:09,489 - app.py:56 - server_info - set jinja2 template path: /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/templates
+2016-06-01 02:31:09,489 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 02:31:09,489 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 02:31:09,489 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 02:31:09,490 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 02:31:09,490 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 02:31:09,490 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 02:31:09,490 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 02:31:09,490 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 02:31:09,490 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 02:31:09,490 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 02:31:09,490 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 02:31:09,490 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 02:31:09,490 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 02:31:09,490 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 02:31:09,491 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 02:31:09,491 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 02:31:09,491 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 02:31:09,491 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 02:31:09,491 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 02:31:09,491 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 02:31:09,491 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 02:31:09,491 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 02:31:09,491 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 02:31:09,491 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 02:31:09,491 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 02:31:09,492 - coroweb.py:238 - server_info - set coroutine: api_register_user
+2016-06-01 02:31:09,492 - coroweb.py:241 - server_info - add route POST /api/users => api_register_user(email,name,passwd)
+2016-06-01 02:31:09,493 - coroweb.py:238 - server_info - set coroutine: authenticate
+2016-06-01 02:31:09,493 - coroweb.py:241 - server_info - add route POST /api/authenticate => authenticate(email,passwd)
+2016-06-01 02:31:09,493 - coroweb.py:238 - server_info - set coroutine: register
+2016-06-01 02:31:09,494 - coroweb.py:241 - server_info - add route GET /register => register()
+2016-06-01 02:31:09,494 - coroweb.py:238 - server_info - set coroutine: signin
+2016-06-01 02:31:09,494 - coroweb.py:241 - server_info - add route GET /signin => signin()
+2016-06-01 02:31:09,495 - coroweb.py:238 - server_info - set coroutine: signout
+2016-06-01 02:31:09,495 - coroweb.py:241 - server_info - add route GET /signout => signout(request)
+2016-06-01 02:31:09,495 - coroweb.py:228 - server_info - add static /static/ => /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/static
+2016-06-01 02:31:18,052 - app.py:72 - server_info - Request: GET /
+2016-06-01 02:31:18,053 - app.py:93 - server_info - Response handler...
+2016-06-01 02:31:18,053 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 02:31:18,053 - app.py:96 - server_info - response result = {'blogs': [{'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464719358.053446, 'id': '1'}, {'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464715878.053453, 'id': '2'}, {'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464712278.053455, 'id': '3'}], '__template__': 'blogs.html'}
+2016-06-01 02:31:18,172 - app.py:72 - server_info - Request: GET /static/js/jquery.min.js
+2016-06-01 02:31:18,172 - app.py:93 - server_info - Response handler...
+2016-06-01 02:31:18,176 - app.py:72 - server_info - Request: GET /static/css/awesome.css
+2016-06-01 02:31:18,177 - app.py:93 - server_info - Response handler...
+2016-06-01 02:31:18,181 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 02:31:18,181 - app.py:93 - server_info - Response handler...
+2016-06-01 02:31:18,186 - app.py:72 - server_info - Request: GET /static/js/awesome.js
+2016-06-01 02:31:18,186 - app.py:93 - server_info - Response handler...
+2016-06-01 02:31:18,619 - app.py:72 - server_info - Request: GET /
+2016-06-01 02:31:18,620 - app.py:93 - server_info - Response handler...
+2016-06-01 02:31:18,620 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 02:31:18,620 - app.py:96 - server_info - response result = {'blogs': [{'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464719358.620346, 'id': '1'}, {'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464715878.620352, 'id': '2'}, {'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464712278.620355, 'id': '3'}], '__template__': 'blogs.html'}
+2016-06-01 02:31:18,670 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 02:31:18,670 - app.py:93 - server_info - Response handler...
+2016-06-01 02:31:21,535 - app.py:72 - server_info - Request: GET /signin
+2016-06-01 02:31:21,535 - app.py:93 - server_info - Response handler...
+2016-06-01 02:31:21,535 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 02:31:21,536 - app.py:96 - server_info - response result = {'__template__': 'signin.html'}
+2016-06-01 02:31:21,568 - app.py:72 - server_info - Request: GET /static/js/sha1.min.js
+2016-06-01 02:31:21,568 - app.py:93 - server_info - Response handler...
+2016-06-01 02:31:21,571 - app.py:96 - server_info - response result = <StreamResponse OK GET /static/js/sha1.min.js >
+2016-06-01 02:31:21,572 - app.py:72 - server_info - Request: GET /static/js/vue.min.js
+2016-06-01 02:31:21,572 - app.py:93 - server_info - Response handler...
+2016-06-01 02:31:21,573 - app.py:96 - server_info - response result = <StreamResponse OK GET /static/js/vue.min.js >
+2016-06-01 02:31:28,607 - app.py:72 - server_info - Request: GET /
+2016-06-01 02:31:28,607 - app.py:93 - server_info - Response handler...
+2016-06-01 02:31:28,607 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 02:31:28,607 - app.py:96 - server_info - response result = {'blogs': [{'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464719368.607883, 'id': '1'}, {'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464715888.60789, 'id': '2'}, {'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464712288.607892, 'id': '3'}], '__template__': 'blogs.html'}
+2016-06-01 02:31:28,634 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 02:31:28,634 - app.py:93 - server_info - Response handler...
+2016-06-01 02:31:33,762 - app.py:72 - server_info - Request: GET /signin
+2016-06-01 02:31:33,762 - app.py:93 - server_info - Response handler...
+2016-06-01 02:31:33,762 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 02:31:33,762 - app.py:96 - server_info - response result = {'__template__': 'signin.html'}
+2016-06-01 02:31:42,073 - app.py:72 - server_info - Request: POST /api/authenticate
+2016-06-01 02:31:42,073 - app.py:93 - server_info - Response handler...
+2016-06-01 02:31:42,074 - coroweb.py:215 - server_info - call with args: {'email': '723526676@qq.com', 'passwd': '687b72d3c1423998b8d42779376f40d5e495f92a'}
+2016-06-01 02:31:51,225 - app.py:72 - server_info - Request: GET /register
+2016-06-01 02:31:51,225 - app.py:93 - server_info - Response handler...
+2016-06-01 02:31:51,225 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 02:31:51,225 - app.py:96 - server_info - response result = {'__template__': 'register.html'}
+2016-06-01 02:31:51,251 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 02:31:51,251 - app.py:93 - server_info - Response handler...
+2016-06-01 02:36:55,044 - app.py:72 - server_info - Request: GET /
+2016-06-01 02:36:55,044 - app.py:93 - server_info - Response handler...
+2016-06-01 02:36:55,044 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 02:36:55,044 - app.py:96 - server_info - response result = {'blogs': [{'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464719695.044932, 'id': '1'}, {'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464716215.044941, 'id': '2'}, {'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464712615.044945, 'id': '3'}], '__template__': 'blogs.html'}
+2016-06-01 02:36:55,193 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 02:36:55,193 - app.py:93 - server_info - Response handler...
+2016-06-01 02:36:55,674 - app.py:72 - server_info - Request: GET /
+2016-06-01 02:36:55,674 - app.py:93 - server_info - Response handler...
+2016-06-01 02:36:55,674 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 02:36:55,674 - app.py:96 - server_info - response result = {'blogs': [{'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464719695.6745, 'id': '1'}, {'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464716215.674507, 'id': '2'}, {'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464712615.674509, 'id': '3'}], '__template__': 'blogs.html'}
+2016-06-01 02:36:55,727 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 02:36:55,727 - app.py:93 - server_info - Response handler...
+2016-06-01 02:36:57,164 - app.py:72 - server_info - Request: GET /register
+2016-06-01 02:36:57,164 - app.py:93 - server_info - Response handler...
+2016-06-01 02:36:57,164 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 02:36:57,164 - app.py:96 - server_info - response result = {'__template__': 'register.html'}
+2016-06-01 02:36:57,198 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 02:36:57,198 - app.py:93 - server_info - Response handler...
+2016-06-01 02:39:15,790 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 02:39:15,790 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 02:39:15,790 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 02:39:15,790 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 02:39:15,791 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 02:39:15,791 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 02:39:15,791 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 02:39:15,791 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 02:39:15,791 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 02:39:15,791 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 02:39:15,791 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 02:39:15,791 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 02:39:15,791 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 02:39:15,791 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 02:39:15,791 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 02:39:15,792 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 02:39:15,792 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 02:39:15,792 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 02:39:15,792 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 02:39:15,792 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 02:39:15,792 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 02:39:15,792 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 02:39:15,792 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 02:39:15,792 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 02:39:15,792 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 02:39:23,268 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 02:39:23,272 - app.py:41 - server_info - init jinja2....
+2016-06-01 02:39:23,273 - app.py:56 - server_info - set jinja2 template path: /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/templates
+2016-06-01 02:39:23,275 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 02:39:23,275 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 02:39:23,275 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 02:39:23,275 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 02:39:23,275 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 02:39:23,275 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 02:39:23,275 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 02:39:23,275 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 02:39:23,275 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 02:39:23,275 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 02:39:23,276 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 02:39:23,276 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 02:39:23,276 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 02:39:23,276 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 02:39:23,276 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 02:39:23,276 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 02:39:23,276 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 02:39:23,276 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 02:39:23,276 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 02:39:23,277 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 02:39:23,277 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 02:39:23,277 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 02:39:23,277 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 02:39:23,277 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 02:39:23,277 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 02:39:23,278 - coroweb.py:238 - server_info - set coroutine: api_register_user
+2016-06-01 02:39:23,278 - coroweb.py:241 - server_info - add route POST /api/users => api_register_user(email,name,passwd)
+2016-06-01 02:39:23,278 - coroweb.py:238 - server_info - set coroutine: register
+2016-06-01 02:39:23,279 - coroweb.py:241 - server_info - add route GET /register => register()
+2016-06-01 02:39:23,279 - coroweb.py:238 - server_info - set coroutine: signin
+2016-06-01 02:39:23,279 - coroweb.py:241 - server_info - add route GET /signin => signin()
+2016-06-01 02:39:23,279 - coroweb.py:238 - server_info - set coroutine: signout
+2016-06-01 02:39:23,279 - coroweb.py:241 - server_info - add route GET /signout => signout(request)
+2016-06-01 02:39:23,280 - coroweb.py:228 - server_info - add static /static/ => /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/static
+2016-06-01 02:39:28,393 - app.py:72 - server_info - Request: GET /
+2016-06-01 02:39:28,394 - app.py:93 - server_info - Response handler...
+2016-06-01 02:39:28,394 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 02:39:28,394 - app.py:96 - server_info - response result = {'__template__': 'blogs.html', 'blogs': [{'created_at': 1464719848.394606, 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'name': 'Test Blog', 'id': '1'}, {'created_at': 1464716368.394616, 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'name': 'Something New', 'id': '2'}, {'created_at': 1464712768.39462, 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'name': 'Learn Swift', 'id': '3'}]}
+2016-06-01 02:39:28,715 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 02:39:28,715 - app.py:93 - server_info - Response handler...
+2016-06-01 02:39:29,078 - app.py:72 - server_info - Request: GET /favicon.ico
+2016-06-01 02:39:29,079 - app.py:93 - server_info - Response handler...
+2016-06-01 02:39:30,821 - app.py:72 - server_info - Request: GET /register
+2016-06-01 02:39:30,821 - app.py:93 - server_info - Response handler...
+2016-06-01 02:39:30,821 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 02:39:30,821 - app.py:96 - server_info - response result = {'__template__': 'register.html'}
+2016-06-01 02:39:30,855 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 02:39:30,855 - app.py:93 - server_info - Response handler...
+2016-06-01 02:39:32,000 - app.py:72 - server_info - Request: GET /signin
+2016-06-01 02:39:32,000 - app.py:93 - server_info - Response handler...
+2016-06-01 02:39:32,000 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 02:39:32,001 - app.py:96 - server_info - response result = {'__template__': 'signin.html'}
+2016-06-01 02:39:46,008 - app.py:72 - server_info - Request: POST /api/authenticate
+2016-06-01 02:39:46,008 - app.py:93 - server_info - Response handler...
+2016-06-01 02:39:46,008 - coroweb.py:215 - server_info - call with args: {'email': '723526676@qq.com', 'passwd': '687b72d3c1423998b8d42779376f40d5e495f92a'}
+2016-06-01 02:48:08,305 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 02:48:08,309 - app.py:41 - server_info - init jinja2....
+2016-06-01 02:48:08,310 - app.py:56 - server_info - set jinja2 template path: /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/templates
+2016-06-01 02:48:08,312 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 02:48:08,312 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 02:48:08,312 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 02:48:08,313 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 02:48:08,313 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 02:48:08,313 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 02:48:08,313 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 02:48:08,313 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 02:48:08,313 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 02:48:08,313 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 02:48:08,313 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 02:48:08,313 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 02:48:08,314 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 02:48:08,314 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 02:48:08,314 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 02:48:08,314 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 02:48:08,314 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 02:48:08,314 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 02:48:08,314 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 02:48:08,314 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 02:48:08,315 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 02:48:08,315 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 02:48:08,315 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 02:48:08,315 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 02:48:08,315 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 02:48:08,317 - coroweb.py:228 - server_info - add static /static/ => /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/static
+2016-06-01 02:48:15,574 - app.py:72 - server_info - Request: GET /
+2016-06-01 02:48:15,574 - app.py:93 - server_info - Response handler...
+2016-06-01 02:48:15,574 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 02:48:15,574 - app.py:96 - server_info - response result = {'blogs': [{'created_at': 1464720375.574883, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464716895.574889, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464713295.574892, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'}
+2016-06-01 02:48:15,698 - app.py:72 - server_info - Request: GET /static/css/awesome.css
+2016-06-01 02:48:15,699 - app.py:93 - server_info - Response handler...
+2016-06-01 02:48:15,700 - app.py:72 - server_info - Request: GET /static/js/jquery.min.js
+2016-06-01 02:48:15,701 - app.py:93 - server_info - Response handler...
+2016-06-01 02:48:15,702 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 02:48:15,702 - app.py:93 - server_info - Response handler...
+2016-06-01 02:48:15,703 - app.py:72 - server_info - Request: GET /static/js/awesome.js
+2016-06-01 02:48:15,703 - app.py:93 - server_info - Response handler...
+2016-06-01 02:48:19,226 - app.py:72 - server_info - Request: GET /signin
+2016-06-01 02:48:19,226 - app.py:93 - server_info - Response handler...
+2016-06-01 02:48:19,227 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 02:48:19,227 - app.py:96 - server_info - response result = {'__template__': 'signin.html'}
+2016-06-01 02:48:19,256 - app.py:72 - server_info - Request: GET /static/js/sha1.min.js
+2016-06-01 02:48:19,256 - app.py:93 - server_info - Response handler...
+2016-06-01 02:48:19,258 - app.py:72 - server_info - Request: GET /static/js/vue.min.js
+2016-06-01 02:48:19,258 - app.py:93 - server_info - Response handler...
+2016-06-01 02:48:26,765 - app.py:72 - server_info - Request: POST /api/authenticate
+2016-06-01 02:48:26,765 - app.py:93 - server_info - Response handler...
+2016-06-01 02:48:26,765 - coroweb.py:215 - server_info - call with args: {'email': '723526676@qq.com', 'passwd': '687b72d3c1423998b8d42779376f40d5e495f92a'}
+2016-06-01 02:48:26,765 - orm.py:23 - server_info - SQL: select `id`, `admin`,`created_at`,`image`,`passwd`,`email`,`name` from `users` where email=?, ARGS: ['723526676@qq.com']
+2016-06-01 02:48:26,767 - orm.py:57 - server_info - rows returned: 1
+2016-06-01 02:48:34,864 - app.py:72 - server_info - Request: GET /register
+2016-06-01 02:48:34,864 - app.py:93 - server_info - Response handler...
+2016-06-01 02:48:34,864 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 02:48:34,865 - app.py:96 - server_info - response result = {'__template__': 'register.html'}
+2016-06-01 02:48:34,894 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 02:48:34,894 - app.py:93 - server_info - Response handler...
+2016-06-01 02:50:27,794 - app.py:72 - server_info - Request: GET /register
+2016-06-01 02:50:27,795 - app.py:93 - server_info - Response handler...
+2016-06-01 02:50:27,795 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 02:50:27,795 - app.py:96 - server_info - response result = {'__template__': 'register.html'}
+2016-06-01 02:50:27,815 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 02:50:27,815 - app.py:93 - server_info - Response handler...
+2016-06-01 02:50:39,103 - app.py:72 - server_info - Request: GET /signin
+2016-06-01 02:50:39,103 - app.py:93 - server_info - Response handler...
+2016-06-01 02:50:39,103 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 02:50:39,103 - app.py:96 - server_info - response result = {'__template__': 'signin.html'}
+2016-06-01 02:50:41,883 - app.py:72 - server_info - Request: GET /
+2016-06-01 02:50:41,883 - app.py:93 - server_info - Response handler...
+2016-06-01 02:50:41,883 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 02:50:41,883 - app.py:96 - server_info - response result = {'blogs': [{'created_at': 1464720521.883749, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464717041.883756, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464713441.883759, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'}
+2016-06-01 02:50:41,905 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 02:50:41,905 - app.py:93 - server_info - Response handler...
+2016-06-01 02:50:50,551 - app.py:72 - server_info - Request: POST /api/authenticate
+2016-06-01 02:50:50,551 - app.py:93 - server_info - Response handler...
+2016-06-01 02:50:50,551 - coroweb.py:215 - server_info - call with args: {'email': '723526676@qq.com', 'passwd': '687b72d3c1423998b8d42779376f40d5e495f92a'}
+2016-06-01 02:50:50,551 - orm.py:23 - server_info - SQL: select `id`, `admin`,`created_at`,`image`,`passwd`,`email`,`name` from `users` where email=?, ARGS: ['723526676@qq.com']
+2016-06-01 02:50:50,552 - orm.py:57 - server_info - rows returned: 1
+2016-06-01 03:00:41,317 - app.py:72 - server_info - Request: GET /signin
+2016-06-01 03:00:41,317 - app.py:93 - server_info - Response handler...
+2016-06-01 03:00:41,318 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 03:00:41,318 - app.py:96 - server_info - response result = {'__template__': 'signin.html'}
+2016-06-01 03:00:41,414 - app.py:72 - server_info - Request: GET /static/css/uikit.min.css
+2016-06-01 03:00:41,414 - app.py:93 - server_info - Response handler...
+2016-06-01 03:00:41,416 - app.py:72 - server_info - Request: GET /static/css/uikit.gradient.min.css
+2016-06-01 03:00:41,416 - app.py:93 - server_info - Response handler...
+2016-06-01 03:00:41,418 - app.py:72 - server_info - Request: GET /static/js/jquery.min.js
+2016-06-01 03:00:41,418 - app.py:93 - server_info - Response handler...
+2016-06-01 03:00:41,419 - app.py:72 - server_info - Request: GET /static/js/vue.min.js
+2016-06-01 03:00:41,419 - app.py:93 - server_info - Response handler...
+2016-06-01 03:00:41,421 - app.py:72 - server_info - Request: GET /static/js/sha1.min.js
+2016-06-01 03:00:41,421 - app.py:93 - server_info - Response handler...
+2016-06-01 03:00:41,422 - app.py:72 - server_info - Request: GET /static/js/uikit.min.js
+2016-06-01 03:00:41,422 - app.py:93 - server_info - Response handler...
+2016-06-01 03:00:41,423 - app.py:72 - server_info - Request: GET /static/js/awesome.js
+2016-06-01 03:00:41,423 - app.py:93 - server_info - Response handler...
+2016-06-01 03:00:41,542 - app.py:72 - server_info - Request: GET /static/fonts/fontawesome-webfont.woff2
+2016-06-01 03:00:41,542 - app.py:93 - server_info - Response handler...
+2016-06-01 03:00:57,470 - app.py:72 - server_info - Request: POST /api/authenticate
+2016-06-01 03:00:57,470 - app.py:93 - server_info - Response handler...
+2016-06-01 03:00:57,470 - coroweb.py:215 - server_info - call with args: {'email': '723526676@qq.com', 'passwd': ''}
+2016-06-01 03:15:09,028 - app.py:72 - server_info - Request: GET /
+2016-06-01 03:15:09,029 - app.py:93 - server_info - Response handler...
+2016-06-01 03:15:09,029 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 03:15:09,029 - app.py:96 - server_info - response result = {'blogs': [{'created_at': 1464721989.02935, 'id': '1', 'name': 'Test Blog', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464718509.029357, 'id': '2', 'name': 'Something New', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}, {'created_at': 1464714909.02936, 'id': '3', 'name': 'Learn Swift', 'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}], '__template__': 'blogs.html'}
+2016-06-01 03:15:09,139 - app.py:72 - server_info - Request: GET /static/css/awesome.css
+2016-06-01 03:15:09,139 - app.py:93 - server_info - Response handler...
+2016-06-01 03:15:09,141 - app.py:72 - server_info - Request: GET /static/js/jquery.min.js
+2016-06-01 03:15:09,141 - app.py:93 - server_info - Response handler...
+2016-06-01 03:15:09,142 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 03:15:09,142 - app.py:93 - server_info - Response handler...
+2016-06-01 03:15:09,143 - app.py:72 - server_info - Request: GET /static/js/awesome.js
+2016-06-01 03:15:09,143 - app.py:93 - server_info - Response handler...
+2016-06-01 03:15:11,999 - app.py:72 - server_info - Request: GET /signin
+2016-06-01 03:15:11,999 - app.py:93 - server_info - Response handler...
+2016-06-01 03:15:11,999 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 03:15:11,999 - app.py:96 - server_info - response result = {'__template__': 'signin.html'}
+2016-06-01 03:15:12,024 - app.py:72 - server_info - Request: GET /static/js/sha1.min.js
+2016-06-01 03:15:12,024 - app.py:93 - server_info - Response handler...
+2016-06-01 03:15:12,025 - app.py:72 - server_info - Request: GET /static/js/vue.min.js
+2016-06-01 03:15:12,026 - app.py:93 - server_info - Response handler...
+2016-06-01 03:15:20,331 - app.py:72 - server_info - Request: POST /api/authenticate
+2016-06-01 03:15:20,331 - app.py:93 - server_info - Response handler...
+2016-06-01 03:15:20,331 - coroweb.py:215 - server_info - call with args: {'email': '723526676@qq.com', 'passwd': '687b72d3c1423998b8d42779376f40d5e495f92a'}
+2016-06-01 03:15:20,332 - orm.py:23 - server_info - SQL: select `id`, `admin`,`created_at`,`image`,`passwd`,`email`,`name` from `users` where email=?, ARGS: ['723526676@qq.com']
+2016-06-01 03:15:20,332 - orm.py:57 - server_info - rows returned: 1
+2016-06-01 03:22:28,203 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 03:22:28,203 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:22:28,204 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 03:22:28,204 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 03:22:28,204 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:22:28,204 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 03:22:28,204 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 03:22:28,204 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:22:28,204 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 03:22:28,204 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 03:22:28,204 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:22:28,204 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:22:28,204 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:22:28,204 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:22:28,204 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:22:28,204 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:22:28,205 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:22:28,205 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 03:22:28,205 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:22:28,205 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 03:22:28,205 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:22:28,205 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:22:28,205 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 03:22:28,205 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:22:28,205 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:22:28,206 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 03:22:28,210 - orm.py:194 - server_info - using default value for created_at: 1464722548.210926
+2016-06-01 03:22:28,211 - orm.py:194 - server_info - using default value for admin: False
+2016-06-01 03:22:28,211 - orm.py:194 - server_info - using default value for id: 0014647225482113af9731f28964162b66332754fb8e763000
+2016-06-01 03:22:28,211 - orm.py:23 - server_info - SQL: insert into `users` (`created_at`,`email`,`admin`,`image`,`passwd`,`name`, `id`) values (?, ?, ?, ?, ?, ?, ?), ARGS: ()
+2016-06-01 03:22:28,214 - orm.py:72 - server_info - commit success!
+2016-06-01 03:22:44,004 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 03:22:44,004 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:22:44,004 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 03:22:44,004 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 03:22:44,004 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:22:44,004 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:22:44,004 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 03:22:44,004 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 03:22:44,004 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 03:22:44,004 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:22:44,004 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:22:44,005 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:22:44,005 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 03:22:44,005 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:22:44,005 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:22:44,005 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:22:44,005 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:22:44,005 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 03:22:44,005 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:22:44,005 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:22:44,005 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 03:22:44,005 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:22:44,005 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:22:44,005 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:22:44,005 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 03:22:44,006 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 03:22:44,012 - orm.py:194 - server_info - using default value for created_at: 1464722564.012036
+2016-06-01 03:22:44,012 - orm.py:194 - server_info - using default value for admin: False
+2016-06-01 03:22:44,012 - orm.py:194 - server_info - using default value for id: 00146472256401200756b051b4a42f3ad834dae6248b078000
+2016-06-01 03:22:44,012 - orm.py:23 - server_info - SQL: insert into `users` (`image`,`email`,`name`,`created_at`,`passwd`,`admin`, `id`) values (?, ?, ?, ?, ?, ?, ?), ARGS: ()
+2016-06-01 03:23:28,291 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 03:23:28,291 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:23:28,291 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:23:28,291 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 03:23:28,291 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 03:23:28,291 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 03:23:28,291 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:23:28,291 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 03:23:28,292 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 03:23:28,292 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 03:23:28,292 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:23:28,292 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:23:28,292 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:23:28,292 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:23:28,292 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:23:28,292 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:23:28,292 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:23:28,292 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 03:23:28,292 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:23:28,293 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 03:23:28,293 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 03:23:28,293 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:23:28,293 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:23:28,293 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:23:28,293 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:23:28,293 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 03:23:28,299 - orm.py:194 - server_info - using default value for created_at: 1464722608.299139
+2016-06-01 03:23:28,299 - orm.py:194 - server_info - using default value for admin: False
+2016-06-01 03:23:28,299 - orm.py:194 - server_info - using default value for id: 00146472260829986026377ebf84628804077e366455911000
+2016-06-01 03:23:28,299 - orm.py:23 - server_info - SQL: insert into `users` (`name`,`email`,`passwd`,`image`,`created_at`,`admin`, `id`) values (?, ?, ?, ?, ?, ?, ?), ARGS: ()
+2016-06-01 03:24:03,750 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 03:24:03,750 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:24:03,750 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 03:24:03,750 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 03:24:03,750 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:24:03,750 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 03:24:03,750 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 03:24:03,750 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:24:03,751 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 03:24:03,751 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:24:03,751 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:24:03,751 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:24:03,751 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:24:03,751 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:24:03,751 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 03:24:03,751 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:24:03,751 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:24:03,751 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 03:24:03,751 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:24:03,751 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:24:03,751 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:24:03,751 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:24:03,751 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:24:03,751 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 03:24:03,752 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 03:24:03,752 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 03:24:03,757 - orm.py:194 - server_info - using default value for admin: False
+2016-06-01 03:24:03,758 - orm.py:194 - server_info - using default value for created_at: 1464722643.75804
+2016-06-01 03:24:03,758 - orm.py:194 - server_info - using default value for id: 001464722643758dd1f3ec990324fdf8319de6ba1db2303000
+2016-06-01 03:24:03,758 - orm.py:23 - server_info - SQL: insert into `users` (`name`,`image`,`passwd`,`email`,`admin`,`created_at`, `id`) values (?, ?, ?, ?, ?, ?, ?), ARGS: ()
+2016-06-01 03:24:03,761 - orm.py:72 - server_info - commit success!
+2016-06-01 03:24:41,039 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 03:24:41,039 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 03:24:41,039 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:24:41,040 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 03:24:41,040 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 03:24:41,040 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:24:41,040 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 03:24:41,040 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:24:41,040 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 03:24:41,040 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 03:24:41,040 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:24:41,040 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:24:41,040 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:24:41,040 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:24:41,040 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:24:41,041 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:24:41,041 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:24:41,041 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 03:24:41,041 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:24:41,041 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:24:41,041 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:24:41,042 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:24:41,042 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 03:24:41,042 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 03:24:41,042 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:24:41,042 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 03:24:41,048 - orm.py:194 - server_info - using default value for admin: False
+2016-06-01 03:24:41,048 - orm.py:194 - server_info - using default value for created_at: 1464722681.048441
+2016-06-01 03:24:41,048 - orm.py:194 - server_info - using default value for id: 0014647226810487ba316a2a46c43b7a2ebdad109508a5d000
+2016-06-01 03:24:41,048 - orm.py:23 - server_info - SQL: insert into `users` (`image`,`name`,`email`,`admin`,`created_at`,`passwd`, `id`) values (?, ?, ?, ?, ?, ?, ?), ARGS: ()
+2016-06-01 03:25:39,931 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 03:25:39,931 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:25:39,931 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:25:39,931 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:25:39,931 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 03:25:39,931 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 03:25:39,931 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 03:25:39,931 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 03:25:39,932 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 03:25:39,932 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 03:25:39,932 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:25:39,932 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:25:39,932 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:25:39,932 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:25:39,932 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:25:39,932 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:25:39,932 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:25:39,932 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 03:25:39,932 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:25:39,932 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:25:39,932 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:25:39,933 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:25:39,933 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:25:39,933 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 03:25:39,933 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 03:25:39,933 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 03:25:39,938 - orm.py:194 - server_info - using default value for created_at: 1464722739.938817
+2016-06-01 03:25:39,938 - orm.py:194 - server_info - using default value for admin: False
+2016-06-01 03:25:39,939 - orm.py:194 - server_info - using default value for id: 0014647227399397c311bd4459748e19d0275fba2f2f120000
+2016-06-01 03:25:39,939 - orm.py:23 - server_info - SQL: insert into `users` (`name`,`created_at`,`image`,`admin`,`email`,`passwd`, `id`) values (?, ?, ?, ?, ?, ?, ?), ARGS: ()
+2016-06-01 03:26:29,004 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 03:26:29,005 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:26:29,005 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:26:29,005 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 03:26:29,005 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 03:26:29,005 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 03:26:29,005 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 03:26:29,005 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:26:29,005 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 03:26:29,005 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:26:29,005 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:26:29,006 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:26:29,006 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:26:29,006 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 03:26:29,006 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:26:29,006 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:26:29,006 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:26:29,006 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 03:26:29,006 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:26:29,006 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:26:29,006 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 03:26:29,006 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:26:29,006 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:26:29,007 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 03:26:29,007 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:26:29,007 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 03:26:29,012 - orm.py:194 - server_info - using default value for admin: False
+2016-06-01 03:26:29,013 - orm.py:194 - server_info - using default value for created_at: 1464722789.013153
+2016-06-01 03:26:29,013 - orm.py:194 - server_info - using default value for id: 001464722789013721ae904187d428e831b219d2397dade000
+2016-06-01 03:26:29,013 - orm.py:23 - server_info - SQL: insert into `users` (`name`,`admin`,`image`,`passwd`,`email`,`created_at`, `id`) values (?, ?, ?, ?, ?, ?, ?), ARGS: ()
+2016-06-01 03:27:28,770 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 03:27:28,770 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 03:27:28,770 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:27:28,770 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 03:27:28,770 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 03:27:28,770 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 03:27:28,770 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:27:28,770 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:27:28,771 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 03:27:28,771 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 03:27:28,771 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:27:28,771 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:27:28,771 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:27:28,771 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:27:28,771 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:27:28,771 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:27:28,771 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:27:28,771 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 03:27:28,772 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:27:28,772 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:27:28,772 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 03:27:28,772 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:27:28,772 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:27:28,772 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 03:27:28,772 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:27:28,773 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 03:27:28,779 - orm.py:194 - server_info - using default value for admin: False
+2016-06-01 03:27:28,780 - orm.py:194 - server_info - using default value for created_at: 1464722848.780069
+2016-06-01 03:27:28,780 - orm.py:194 - server_info - using default value for id: 0014647228487808454dbfe07f54ac3b3f1d5133e2e97de000
+2016-06-01 03:27:28,780 - orm.py:23 - server_info - SQL: insert into `users` (`email`,`passwd`,`image`,`admin`,`created_at`,`name`, `id`) values (?, ?, ?, ?, ?, ?, ?), ARGS: ()
+2016-06-01 03:28:56,503 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 03:28:56,503 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 03:28:56,503 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:28:56,504 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 03:28:56,504 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 03:28:56,504 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:28:56,504 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:28:56,504 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 03:28:56,504 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 03:28:56,504 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:28:56,504 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:28:56,504 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:28:56,504 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:28:56,505 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:28:56,505 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 03:28:56,505 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:28:56,505 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:28:56,505 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 03:28:56,505 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:28:56,505 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 03:28:56,505 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:28:56,505 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:28:56,505 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:28:56,505 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 03:28:56,505 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:28:56,506 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 03:28:56,511 - orm.py:194 - server_info - using default value for created_at: 1464722936.511939
+2016-06-01 03:28:56,512 - orm.py:194 - server_info - using default value for admin: False
+2016-06-01 03:28:56,512 - orm.py:194 - server_info - using default value for id: 0014647229365127aeaf84c060147fe8b7faaebbbaa4d1c000
+2016-06-01 03:28:56,512 - orm.py:23 - server_info - SQL: insert into `users` (`passwd`,`created_at`,`image`,`email`,`name`,`admin`, `id`) values (?, ?, ?, ?, ?, ?, ?), ARGS: ()
+2016-06-01 03:29:27,171 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 03:29:27,171 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:29:27,171 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 03:29:27,171 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:29:27,171 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 03:29:27,171 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:29:27,171 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 03:29:27,171 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 03:29:27,171 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 03:29:27,171 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:29:27,171 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:29:27,171 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:29:27,172 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:29:27,172 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:29:27,172 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 03:29:27,172 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:29:27,172 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:29:27,172 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 03:29:27,172 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:29:27,172 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:29:27,172 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:29:27,172 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:29:27,172 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 03:29:27,172 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:29:27,172 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 03:29:27,173 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 03:29:27,178 - orm.py:194 - server_info - using default value for created_at: 1464722967.178364
+2016-06-01 03:29:27,178 - orm.py:194 - server_info - using default value for admin: False
+2016-06-01 03:29:27,178 - orm.py:194 - server_info - using default value for id: 00146472296717871b84196e0a149e5a68697f146005772000
+2016-06-01 03:29:27,178 - orm.py:23 - server_info - SQL: insert into `users` (`created_at`,`image`,`name`,`email`,`passwd`,`admin`, `id`) values (?, ?, ?, ?, ?, ?, ?), ARGS: ()
+2016-06-01 03:29:27,181 - orm.py:72 - server_info - commit success!
+2016-06-01 03:29:34,762 - app.py:72 - server_info - Request: GET /signin
+2016-06-01 03:29:34,762 - app.py:93 - server_info - Response handler...
+2016-06-01 03:29:34,762 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 03:29:34,762 - app.py:96 - server_info - response result = {'__template__': 'signin.html'}
+2016-06-01 03:29:34,808 - app.py:72 - server_info - Request: GET /static/css/uikit.min.css
+2016-06-01 03:29:34,808 - app.py:93 - server_info - Response handler...
+2016-06-01 03:29:34,809 - app.py:72 - server_info - Request: GET /static/css/uikit.gradient.min.css
+2016-06-01 03:29:34,809 - app.py:93 - server_info - Response handler...
+2016-06-01 03:29:34,811 - app.py:72 - server_info - Request: GET /static/js/jquery.min.js
+2016-06-01 03:29:34,811 - app.py:93 - server_info - Response handler...
+2016-06-01 03:29:34,812 - app.py:72 - server_info - Request: GET /static/js/sha1.min.js
+2016-06-01 03:29:34,812 - app.py:93 - server_info - Response handler...
+2016-06-01 03:29:34,813 - app.py:72 - server_info - Request: GET /static/js/uikit.min.js
+2016-06-01 03:29:34,813 - app.py:93 - server_info - Response handler...
+2016-06-01 03:29:34,814 - app.py:72 - server_info - Request: GET /static/js/vue.min.js
+2016-06-01 03:29:34,814 - app.py:93 - server_info - Response handler...
+2016-06-01 03:29:34,816 - app.py:72 - server_info - Request: GET /static/js/awesome.js
+2016-06-01 03:29:34,816 - app.py:93 - server_info - Response handler...
+2016-06-01 03:29:34,881 - app.py:72 - server_info - Request: GET /static/fonts/fontawesome-webfont.woff2
+2016-06-01 03:29:34,881 - app.py:93 - server_info - Response handler...
+2016-06-01 03:29:45,136 - app.py:72 - server_info - Request: POST /api/authenticate
+2016-06-01 03:29:45,136 - app.py:93 - server_info - Response handler...
+2016-06-01 03:29:45,137 - coroweb.py:215 - server_info - call with args: {'email': '12345@qq.com', 'passwd': 'f6d41a471deedc330f7d7b5afdcbe930b9859439'}
+2016-06-01 03:29:45,137 - orm.py:23 - server_info - SQL: select `id`, `admin`,`created_at`,`image`,`passwd`,`email`,`name` from `users` where email=?, ARGS: ['12345@qq.com']
+2016-06-01 03:29:45,138 - orm.py:57 - server_info - rows returned: 1
+2016-06-01 03:30:26,351 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 03:30:26,356 - app.py:41 - server_info - init jinja2....
+2016-06-01 03:30:26,356 - app.py:56 - server_info - set jinja2 template path: /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/templates
+2016-06-01 03:30:26,356 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 03:30:26,356 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:30:26,356 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 03:30:26,357 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 03:30:26,357 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 03:30:26,357 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:30:26,357 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 03:30:26,357 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:30:26,357 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 03:30:26,357 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:30:26,357 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:30:26,357 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:30:26,357 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:30:26,357 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:30:26,358 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:30:26,358 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 03:30:26,358 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:30:26,358 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 03:30:26,358 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:30:26,358 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:30:26,358 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:30:26,358 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:30:26,358 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 03:30:26,358 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:30:26,358 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 03:30:26,360 - coroweb.py:228 - server_info - add static /static/ => /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/static
+2016-06-01 03:31:00,567 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 03:31:00,572 - app.py:41 - server_info - init jinja2....
+2016-06-01 03:31:00,572 - app.py:56 - server_info - set jinja2 template path: /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/templates
+2016-06-01 03:31:00,573 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 03:31:00,573 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 03:31:00,573 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 03:31:00,573 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:31:00,573 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 03:31:00,573 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 03:31:00,573 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:31:00,573 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:31:00,573 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 03:31:00,573 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:31:00,574 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:31:00,574 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:31:00,574 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:31:00,574 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:31:00,574 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 03:31:00,574 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:31:00,574 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:31:00,574 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 03:31:00,574 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:31:00,574 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:31:00,574 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:31:00,575 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:31:00,575 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 03:31:00,575 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 03:31:00,575 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:31:00,577 - coroweb.py:228 - server_info - add static /static/ => /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/static
+2016-06-01 03:31:03,651 - app.py:72 - server_info - Request: GET /
+2016-06-01 03:31:03,651 - app.py:93 - server_info - Response handler...
+2016-06-01 03:31:03,651 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 03:31:03,651 - app.py:96 - server_info - response result = {'blogs': [{'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464722943.651842, 'name': 'Test Blog', 'id': '1'}, {'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464719463.651849, 'name': 'Something New', 'id': '2'}, {'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464715863.651852, 'name': 'Learn Swift', 'id': '3'}], '__template__': 'blogs.html'}
+2016-06-01 03:31:03,999 - app.py:72 - server_info - Request: GET /static/css/awesome.css
+2016-06-01 03:31:03,999 - app.py:93 - server_info - Response handler...
+2016-06-01 03:31:04,003 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 03:31:04,003 - app.py:93 - server_info - Response handler...
+2016-06-01 03:31:04,364 - app.py:72 - server_info - Request: GET /favicon.ico
+2016-06-01 03:31:04,364 - app.py:93 - server_info - Response handler...
+2016-06-01 03:31:06,241 - app.py:72 - server_info - Request: GET /signin
+2016-06-01 03:31:06,241 - app.py:93 - server_info - Response handler...
+2016-06-01 03:31:06,241 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 03:31:06,241 - app.py:96 - server_info - response result = {'__template__': 'signin.html'}
+2016-06-01 03:31:18,202 - app.py:72 - server_info - Request: POST /api/authenticate
+2016-06-01 03:31:18,202 - app.py:93 - server_info - Response handler...
+2016-06-01 03:31:18,203 - coroweb.py:215 - server_info - call with args: {'passwd': 'f6d41a471deedc330f7d7b5afdcbe930b9859439', 'email': '12345@qq.com'}
+2016-06-01 03:31:18,203 - orm.py:23 - server_info - SQL: select `id`, `passwd`,`admin`,`created_at`,`email`,`image`,`name` from `users` where email=?, ARGS: ['12345@qq.com']
+2016-06-01 03:31:18,204 - orm.py:57 - server_info - rows returned: 1
+2016-06-01 03:32:12,538 - app.py:72 - server_info - Request: POST /api/authenticate
+2016-06-01 03:32:12,538 - app.py:93 - server_info - Response handler...
+2016-06-01 03:32:12,539 - coroweb.py:215 - server_info - call with args: {'passwd': 'f6d41a471deedc330f7d7b5afdcbe930b9859439', 'email': '12345@qq.com'}
+2016-06-01 03:32:12,539 - orm.py:23 - server_info - SQL: select `id`, `passwd`,`admin`,`created_at`,`email`,`image`,`name` from `users` where email=?, ARGS: ['12345@qq.com']
+2016-06-01 03:32:12,540 - orm.py:57 - server_info - rows returned: 1
+2016-06-01 03:35:01,798 - app.py:72 - server_info - Request: GET /signin
+2016-06-01 03:35:01,798 - app.py:93 - server_info - Response handler...
+2016-06-01 03:35:01,798 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 03:35:01,798 - app.py:96 - server_info - response result = {'__template__': 'signin.html'}
+2016-06-01 03:35:01,844 - app.py:72 - server_info - Request: GET /static/css/uikit.min.css
+2016-06-01 03:35:01,844 - app.py:93 - server_info - Response handler...
+2016-06-01 03:35:01,846 - app.py:72 - server_info - Request: GET /static/css/uikit.gradient.min.css
+2016-06-01 03:35:01,846 - app.py:93 - server_info - Response handler...
+2016-06-01 03:35:01,848 - app.py:72 - server_info - Request: GET /static/js/jquery.min.js
+2016-06-01 03:35:01,848 - app.py:93 - server_info - Response handler...
+2016-06-01 03:35:01,849 - app.py:72 - server_info - Request: GET /static/js/sha1.min.js
+2016-06-01 03:35:01,849 - app.py:93 - server_info - Response handler...
+2016-06-01 03:35:01,850 - app.py:72 - server_info - Request: GET /static/js/uikit.min.js
+2016-06-01 03:35:01,850 - app.py:93 - server_info - Response handler...
+2016-06-01 03:35:01,851 - app.py:72 - server_info - Request: GET /static/js/vue.min.js
+2016-06-01 03:35:01,852 - app.py:93 - server_info - Response handler...
+2016-06-01 03:35:01,853 - app.py:72 - server_info - Request: GET /static/js/awesome.js
+2016-06-01 03:35:01,853 - app.py:93 - server_info - Response handler...
+2016-06-01 03:35:01,921 - app.py:72 - server_info - Request: GET /static/fonts/fontawesome-webfont.woff2
+2016-06-01 03:35:01,921 - app.py:93 - server_info - Response handler...
+2016-06-01 03:35:09,491 - app.py:72 - server_info - Request: POST /api/authenticate
+2016-06-01 03:35:09,491 - app.py:93 - server_info - Response handler...
+2016-06-01 03:35:09,491 - coroweb.py:215 - server_info - call with args: {'passwd': 'f6d41a471deedc330f7d7b5afdcbe930b9859439', 'email': '12345@qq.com'}
+2016-06-01 03:35:09,491 - orm.py:23 - server_info - SQL: select `id`, `passwd`,`admin`,`created_at`,`email`,`image`,`name` from `users` where email=?, ARGS: ['12345@qq.com']
+2016-06-01 03:35:09,492 - orm.py:57 - server_info - rows returned: 1
+2016-06-01 03:35:47,539 - orm.py:27 - server_info - create database connection pool...
+2016-06-01 03:35:47,544 - app.py:41 - server_info - init jinja2....
+2016-06-01 03:35:47,544 - app.py:56 - server_info - set jinja2 template path: /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/templates
+2016-06-01 03:35:47,545 - orm.py:137 - server_info - found model: User (table: users)
+2016-06-01 03:35:47,545 - orm.py:144 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-06-01 03:35:47,545 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:35:47,545 - orm.py:144 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-06-01 03:35:47,545 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:35:47,545 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:35:47,545 - orm.py:144 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-06-01 03:35:47,545 - orm.py:144 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-06-01 03:35:47,545 - orm.py:137 - server_info - found model: Blog (table: blogs)
+2016-06-01 03:35:47,546 - orm.py:144 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-06-01 03:35:47,546 - orm.py:144 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-06-01 03:35:47,546 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:35:47,546 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:35:47,546 - orm.py:144 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-06-01 03:35:47,546 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:35:47,546 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:35:47,546 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:35:47,546 - orm.py:137 - server_info - found model: Comment (table: comments)
+2016-06-01 03:35:47,546 - orm.py:144 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-06-01 03:35:47,546 - orm.py:144 - server_info - found mapping: content ==> <TextField, text:None>
+2016-06-01 03:35:47,546 - orm.py:144 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-06-01 03:35:47,547 - orm.py:144 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-06-01 03:35:47,547 - orm.py:144 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-06-01 03:35:47,547 - orm.py:144 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-06-01 03:35:47,547 - orm.py:144 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-06-01 03:35:47,550 - coroweb.py:228 - server_info - add static /static/ => /Users/kHRYSTAL/PycharmProjects/awesome_python3_webapp/www/static
+2016-06-01 03:35:54,343 - app.py:72 - server_info - Request: GET /
+2016-06-01 03:35:54,343 - app.py:93 - server_info - Response handler...
+2016-06-01 03:35:54,343 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 03:35:54,343 - app.py:96 - server_info - response result = {'__template__': 'blogs.html', 'blogs': [{'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464723234.343632, 'name': 'Test Blog', 'id': '1'}, {'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464719754.343641, 'name': 'Something New', 'id': '2'}, {'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464716154.343643, 'name': 'Learn Swift', 'id': '3'}]}
+2016-06-01 03:35:54,681 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 03:35:54,681 - app.py:93 - server_info - Response handler...
+2016-06-01 03:35:55,060 - app.py:72 - server_info - Request: GET /favicon.ico
+2016-06-01 03:35:55,060 - app.py:93 - server_info - Response handler...
+2016-06-01 03:35:57,765 - app.py:72 - server_info - Request: GET /signin
+2016-06-01 03:35:57,765 - app.py:93 - server_info - Response handler...
+2016-06-01 03:35:57,765 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 03:35:57,765 - app.py:96 - server_info - response result = {'__template__': 'signin.html'}
+2016-06-01 03:36:04,884 - app.py:72 - server_info - Request: POST /api/authenticate
+2016-06-01 03:36:04,884 - app.py:93 - server_info - Response handler...
+2016-06-01 03:36:04,884 - coroweb.py:215 - server_info - call with args: {'email': '12345@qq.com', 'passwd': 'f6d41a471deedc330f7d7b5afdcbe930b9859439'}
+2016-06-01 03:36:04,884 - orm.py:23 - server_info - SQL: select `id`, `email`,`name`,`passwd`,`created_at`,`image`,`admin` from `users` where email=?, ARGS: ['12345@qq.com']
+2016-06-01 03:36:04,885 - orm.py:57 - server_info - rows returned: 1
+2016-06-01 03:36:04,886 - app.py:96 - server_info - response result = {'error': 'value:invalid', 'message': 'Invalid password.', 'data': 'passwd'}
+2016-06-01 03:36:20,490 - app.py:72 - server_info - Request: GET /register
+2016-06-01 03:36:20,490 - app.py:93 - server_info - Response handler...
+2016-06-01 03:36:20,490 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 03:36:20,490 - app.py:96 - server_info - response result = {'__template__': 'register.html'}
+2016-06-01 03:36:20,521 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 03:36:20,521 - app.py:93 - server_info - Response handler...
+2016-06-01 03:42:17,442 - app.py:72 - server_info - Request: GET /register
+2016-06-01 03:42:17,442 - app.py:93 - server_info - Response handler...
+2016-06-01 03:42:17,443 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 03:42:17,443 - app.py:96 - server_info - response result = {'__template__': 'register.html'}
+2016-06-01 03:42:31,931 - app.py:72 - server_info - Request: GET /register
+2016-06-01 03:42:31,932 - app.py:93 - server_info - Response handler...
+2016-06-01 03:42:31,932 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 03:42:31,932 - app.py:96 - server_info - response result = {'__template__': 'register.html'}
+2016-06-01 03:42:31,994 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 03:42:31,995 - app.py:93 - server_info - Response handler...
+2016-06-01 03:42:40,486 - app.py:72 - server_info - Request: GET /register
+2016-06-01 03:42:40,486 - app.py:93 - server_info - Response handler...
+2016-06-01 03:42:40,486 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 03:42:40,486 - app.py:96 - server_info - response result = {'__template__': 'register.html'}
+2016-06-01 03:42:40,513 - app.py:72 - server_info - Request: GET /static/css/uikit.min.css
+2016-06-01 03:42:40,514 - app.py:93 - server_info - Response handler...
+2016-06-01 03:42:40,515 - app.py:72 - server_info - Request: GET /static/css/uikit.gradient.min.css
+2016-06-01 03:42:40,515 - app.py:93 - server_info - Response handler...
+2016-06-01 03:42:40,516 - app.py:72 - server_info - Request: GET /static/css/awesome.css
+2016-06-01 03:42:40,516 - app.py:93 - server_info - Response handler...
+2016-06-01 03:42:40,518 - app.py:72 - server_info - Request: GET /static/js/jquery.min.js
+2016-06-01 03:42:40,518 - app.py:93 - server_info - Response handler...
+2016-06-01 03:42:40,519 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 03:42:40,519 - app.py:93 - server_info - Response handler...
+2016-06-01 03:42:40,521 - app.py:72 - server_info - Request: GET /static/js/uikit.min.js
+2016-06-01 03:42:40,521 - app.py:93 - server_info - Response handler...
+2016-06-01 03:42:40,522 - app.py:72 - server_info - Request: GET /static/js/awesome.js
+2016-06-01 03:42:40,522 - app.py:93 - server_info - Response handler...
+2016-06-01 03:42:40,598 - app.py:72 - server_info - Request: GET /static/fonts/fontawesome-webfont.woff2
+2016-06-01 03:42:40,598 - app.py:93 - server_info - Response handler...
+2016-06-01 03:42:46,929 - app.py:72 - server_info - Request: GET /manage/comments
+2016-06-01 03:42:46,930 - app.py:93 - server_info - Response handler...
+2016-06-01 03:42:47,018 - app.py:72 - server_info - Request: GET /favicon.ico
+2016-06-01 03:42:47,018 - app.py:93 - server_info - Response handler...
+2016-06-01 03:42:51,118 - app.py:72 - server_info - Request: GET /manage/
+2016-06-01 03:42:51,118 - app.py:93 - server_info - Response handler...
+2016-06-01 03:43:03,819 - app.py:72 - server_info - Request: GET /signin
+2016-06-01 03:43:03,819 - app.py:93 - server_info - Response handler...
+2016-06-01 03:43:03,820 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 03:43:03,820 - app.py:96 - server_info - response result = {'__template__': 'signin.html'}
+2016-06-01 03:43:34,665 - app.py:72 - server_info - Request: GET /signin
+2016-06-01 03:43:34,665 - app.py:93 - server_info - Response handler...
+2016-06-01 03:43:34,665 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 03:43:34,665 - app.py:96 - server_info - response result = {'__template__': 'signin.html'}
+2016-06-01 03:44:09,117 - app.py:72 - server_info - Request: GET /
+2016-06-01 03:44:09,117 - app.py:93 - server_info - Response handler...
+2016-06-01 03:44:09,117 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 03:44:09,117 - app.py:96 - server_info - response result = {'__template__': 'blogs.html', 'blogs': [{'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464723729.117476, 'name': 'Test Blog', 'id': '1'}, {'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464720249.117483, 'name': 'Something New', 'id': '2'}, {'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464716649.117486, 'name': 'Learn Swift', 'id': '3'}]}
+2016-06-01 03:44:09,206 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 03:44:09,207 - app.py:93 - server_info - Response handler...
+2016-06-01 03:44:10,995 - app.py:72 - server_info - Request: GET /register
+2016-06-01 03:44:10,996 - app.py:93 - server_info - Response handler...
+2016-06-01 03:44:10,996 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 03:44:10,996 - app.py:96 - server_info - response result = {'__template__': 'register.html'}
+2016-06-01 03:44:11,018 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 03:44:11,019 - app.py:93 - server_info - Response handler...
+2016-06-01 03:46:56,023 - app.py:72 - server_info - Request: GET /
+2016-06-01 03:46:56,023 - app.py:93 - server_info - Response handler...
+2016-06-01 03:46:56,023 - coroweb.py:215 - server_info - call with args: {'request': <Request GET / >}
+2016-06-01 03:46:56,023 - app.py:96 - server_info - response result = {'__template__': 'blogs.html', 'blogs': [{'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464723896.023891, 'name': 'Test Blog', 'id': '1'}, {'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464720416.023898, 'name': 'Something New', 'id': '2'}, {'summary': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'created_at': 1464716816.0239, 'name': 'Learn Swift', 'id': '3'}]}
+2016-06-01 03:46:56,135 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 03:46:56,136 - app.py:93 - server_info - Response handler...
+2016-06-01 03:46:58,617 - app.py:72 - server_info - Request: GET /register
+2016-06-01 03:46:58,617 - app.py:93 - server_info - Response handler...
+2016-06-01 03:46:58,617 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 03:46:58,617 - app.py:96 - server_info - response result = {'__template__': 'register.html'}
+2016-06-01 03:46:58,648 - app.py:72 - server_info - Request: GET /static/js/md5.js
+2016-06-01 03:46:58,648 - app.py:93 - server_info - Response handler...
+2016-06-01 03:50:50,603 - app.py:72 - server_info - Request: GET /signin
+2016-06-01 03:50:50,603 - app.py:93 - server_info - Response handler...
+2016-06-01 03:50:50,604 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 03:50:50,604 - app.py:96 - server_info - response result = {'__template__': 'signin.html'}
+2016-06-01 03:50:50,642 - app.py:72 - server_info - Request: GET /static/js/sha1.min.js
+2016-06-01 03:50:50,642 - app.py:93 - server_info - Response handler...
+2016-06-01 03:50:50,644 - app.py:72 - server_info - Request: GET /static/js/vue.min.js
+2016-06-01 03:50:50,644 - app.py:93 - server_info - Response handler...
+2016-06-01 03:51:01,554 - app.py:72 - server_info - Request: GET /signin
+2016-06-01 03:51:01,554 - app.py:93 - server_info - Response handler...
+2016-06-01 03:51:01,554 - coroweb.py:215 - server_info - call with args: {}
+2016-06-01 03:51:01,554 - app.py:96 - server_info - response result = {'__template__': 'signin.html'}
