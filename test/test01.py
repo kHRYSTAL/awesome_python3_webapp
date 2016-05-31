@@ -13,6 +13,7 @@
 @file: test01.py
 @time: 16/5/31 上午1:36
 """
+from www.models import User
 from www.orm import Model, IntegerField, StringField
 
 tableName = 'user'
@@ -26,14 +27,9 @@ print(escaped_fields)
 sql = 'select `%s`, %s from `%s`' % (primarykey, ', '.join(escaped_fields), tableName)
 print(sql)
 
-class User(Model):
 
-    id = IntegerField(primary_key=True)
-    age = IntegerField()
-    name = StringField()
-    grade = IntegerField()
-
-#matt = User(1,25,'matt',99)
+matt = User(name='kHRYSTAL', email='khrystal0918@qq.com', passwd='yyg1990918', image='about:blank')
+print(matt['passwd'],matt['name'],matt['email'])
 
 if __name__ == '__main__':
     pass

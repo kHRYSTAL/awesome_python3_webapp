@@ -1,0 +1,31 @@
+2016-05-31 16:45:47,421 - orm.py:117 - server_info - found model: User (table: users)
+2016-05-31 16:45:47,422 - orm.py:124 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-05-31 16:45:47,422 - orm.py:124 - server_info - found mapping: email ==> <StringField, varchar(50):None>
+2016-05-31 16:45:47,422 - orm.py:124 - server_info - found mapping: passwd ==> <StringField, varchar(50):None>
+2016-05-31 16:45:47,422 - orm.py:124 - server_info - found mapping: admin ==> <BooleanField, boolean:None>
+2016-05-31 16:45:47,422 - orm.py:124 - server_info - found mapping: image ==> <StringField, varchar(500):None>
+2016-05-31 16:45:47,422 - orm.py:124 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-05-31 16:45:47,422 - orm.py:124 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-05-31 16:45:47,422 - orm.py:117 - server_info - found model: Blog (table: blogs)
+2016-05-31 16:45:47,422 - orm.py:124 - server_info - found mapping: created_at ==> <FloatField, real:None>
+2016-05-31 16:45:47,422 - orm.py:124 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-05-31 16:45:47,422 - orm.py:124 - server_info - found mapping: summary ==> <StringField, varchar(200):None>
+2016-05-31 16:45:47,423 - orm.py:124 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-05-31 16:45:47,423 - orm.py:124 - server_info - found mapping: content ==> <TextField, text:None>
+2016-05-31 16:45:47,423 - orm.py:124 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-05-31 16:45:47,423 - orm.py:124 - server_info - found mapping: name ==> <StringField, varchar(50):None>
+2016-05-31 16:45:47,423 - orm.py:124 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-05-31 16:45:47,423 - orm.py:117 - server_info - found model: Comment (table: comments)
+2016-05-31 16:45:47,423 - orm.py:124 - server_info - found mapping: id ==> <StringField, varchar(50):None>
+2016-05-31 16:45:47,423 - orm.py:124 - server_info - found mapping: user_image ==> <StringField, varchar(500):None>
+2016-05-31 16:45:47,423 - orm.py:124 - server_info - found mapping: user_id ==> <StringField, varchar(50):None>
+2016-05-31 16:45:47,423 - orm.py:124 - server_info - found mapping: content ==> <TextField, text:None>
+2016-05-31 16:45:47,423 - orm.py:124 - server_info - found mapping: user_name ==> <StringField, varchar(50):None>
+2016-05-31 16:45:47,423 - orm.py:124 - server_info - found mapping: create_at ==> <FloatField, real:None>
+2016-05-31 16:45:47,423 - orm.py:124 - server_info - found mapping: blog_id ==> <StringField, varchar(50):None>
+2016-05-31 16:45:47,424 - orm.py:17 - server_info - create database connection pool...
+2016-05-31 16:45:47,429 - orm.py:172 - server_info - useing default value for admin: False
+2016-05-31 16:45:47,430 - orm.py:172 - server_info - useing default value for created_at: 1464684347.429981
+2016-05-31 16:45:47,430 - orm.py:172 - server_info - useing default value for id: 0014646843474309782d4d333004dc1b53af5483904cc4a000
+2016-05-31 16:45:47,430 - orm.py:13 - server_info - SQL: insert into `users` (`email`,`passwd`,`admin`,`image`,`created_at`,`name`, `id`) values (?, ?, ?, ?, ?, ?, ?), ARGS: ()
+2016-05-31 16:45:47,431 - orm.py:61 - server_info - commit success!
