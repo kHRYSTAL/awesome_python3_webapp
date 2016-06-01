@@ -23,7 +23,7 @@ from www import orm
 @asyncio.coroutine
 def test(loop):
     yield from orm.create_pool(loop=loop, user='www-data', password='www-data', database='awesome')
-    u=User(name='Matt', email='12345@qq.com', passwd=hashlib.sha1(('%s:%s' % (next_id(), 'yyg1990918')).encode('utf-8')).hexdigest(), image='about:blank')
+    u=User(admin=True, name='kHRYSTAL', email='jessicastam_love@163.com', passwd=hashlib.sha1(('%s:%s' % (next_id(), 'yyg1990918')).encode('utf-8')).hexdigest(), image='about:blank')
     yield from u.save()
 
 loop = asyncio.get_event_loop()

@@ -32,6 +32,7 @@ import asyncio, os, json, time
 from datetime import datetime
 from aiohttp import web
 from www.logger import logger
+from www.handlers import COOKIE_NAME,cookie2user
 
 
 # def index(request):
@@ -73,6 +74,23 @@ async def logger_factory(app, handler):
         #继续处理请求:
         return (await handler(request))
     return logger_fact
+
+@asyncio.coroutine
+def auth_factory(app, handler):
+    @asyncio.coroutine
+    def auth(request):
+        logger.info('check user: %s %s' % (request.method, request.path))
+        request.__user__ = None
+        cookie_str = request.cookies.get(COOKIE_NAME)
+        if cookie_str:
+            user = yield from cookie2user(cookie_str)
+            if user:
+                logger.info('set current user: %s' % user.email)
+                request.__user__ = user
+        if request.path.startswith('/manage/') and (request.__user__ is None or not request.__user__.admin):
+            return web.HTTPFound('/signin')
+        return (yield from handler(request))
+    return auth
 
 
 # ***********************************************响应处理（重点，重点，重点，重要的事说三遍）***************************************************
@@ -119,10 +137,9 @@ async def response_factory(app, handler):
                 resp = web.Response(body = json.dumps(
                     r, ensure_ascii = False, default = lambda o:o.__dict__).encode('utf-8'))
                 resp.content_type = 'application/json'
-                print(resp)
                 return resp
             else:
-                #r['__user__'] = request.__user__
+                r['__user__'] = request.__user__
                 # 在__base__.html中会根据__user__设置用户相关信息
                 # 如果有'__template__'为key的值，则说明要套用jinja2的模板，'__template__'Key对应的为模板文件名
                 # 得到模板文件然后用**r去渲染render
@@ -170,7 +187,7 @@ async def init(loop):
     # middlewares的最后一个元素的handler会通过routes查找到相应的，其实就是routes注册的对应handler
     # 这其实是装饰模式的典型体现，logger_factory, auth_factory, response_factory都是URL处理函数前（如handler.index）的装饰功能
     app = web.Application(loop=loop, middlewares=[
-        logger_factory, response_factory
+        logger_factory, auth_factory, response_factory
     ])
     init_jinja2(app, filters=dict(datetime=datetime_filter))
     # 添加URL处理函数, 参数handlers为模块名

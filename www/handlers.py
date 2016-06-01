@@ -21,7 +21,7 @@ import asyncio
 import time
 from www.logger import logger
 from aiohttp import web
-from www.apis import APIError, Page
+from www.apis import APIError, Page, APIPermissionError
 from www.apis import APIValueError
 from www.config import configs
 from www.coroweb import get, post
@@ -116,6 +116,11 @@ def cookie2user(cookie_str):
         return None
 
 
+def check_admin(request):
+    if request.__user__ is None or not request.__user__.admin:
+        raise APIPermissionError()
+
+
 # @get('/')
 # @asyncio.coroutine
 # def index(request):
@@ -193,11 +198,15 @@ def authenticate(*, email, passwd):
         raise APIValueError('email', 'Email not exist.')
     user = users[0]
     # check passwd:
-    sha1 = hashlib.sha1()
-    sha1.update(user.id.encode('utf-8'))
-    sha1.update(b':')
-    sha1.update(passwd.encode('utf-8'))
-    if user.passwd != sha1.hexdigest():
+    # sha1 = hashlib.sha1()
+    # sha1.update(user.id.encode('utf-8'))
+    # sha1.update(b':')
+    # sha1.update(passwd.encode('utf-8'))
+    browser_sha1_passwd = '%s:%s' % (user.id, passwd)
+    browser_sha1 = hashlib.sha1(browser_sha1_passwd.encode('utf-8'))
+    logger.warn('user password: '+user.passwd)
+    logger.warn('server password: '+browser_sha1.hexdigest())
+    if user.passwd != browser_sha1.hexdigest():
         raise APIValueError('passwd', 'Invalid password.')
     # authenticate ok, set cookie:
     r = web.Response()
@@ -247,6 +256,47 @@ def mamage_create_blog():
         'action': '/api/blogs'  # 提交到此接口
     }
 
+
+@get('/manage/blogs')
+@asyncio.coroutine
+def manage_blogs(*, page = '1'):
+    # 博客管理页面
+    return {
+        '__template__': "manage_blogs.html",
+        'page_index': get_page_index(page)
+    }
+
+
+@get('/api/blogs')
+@asyncio.coroutine
+def api_blogs(*, page = '1'):
+    # 获取博客信息,调用位置：manage_blogs.html 40行
+    '''
+    请参考29行的api_get_users函数的注释
+    '''
+    page_index = get_page_index(page)
+    blog_count = yield from Blog.findNumber('count(id)')
+    p = Page(blog_count, page_index)
+    if blog_count == 0:
+        return dict(page = p, blogs = [])
+    blogs = yield from Blog.findAll(orderBy = 'created_at desc', limit = (p.offset, p.limit))
+    return dict(page = p, blogs = blogs)
+
+@post('/api/blogs')
+@asyncio.coroutine
+def api_create_blog(request, *, name, summary, content):
+    check_admin(request)
+    # 只有管理员可以写博客 ,调用位置：manage_blog_edit.html 22行
+    if not name or not name.strip():
+        raise APIValueError('name', 'name cannot be empty')
+    if not summary or not summary.strip():
+        raise APIValueError('summary', 'summary cannot be empty')
+    if not content or not content.strip():
+        raise APIValueError('content', 'content cannot be empty')
+
+    blog = Blog(user_id = request.__user__.id, user_name = request.__user__.name, user_image = request.__user__.image, name = name.strip(), summary = summary.strip(), content = content.strip())
+    yield from blog.save()
+    return blog
 
 if __name__ == '__main__':
     pass
