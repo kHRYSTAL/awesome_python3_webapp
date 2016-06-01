@@ -19,14 +19,15 @@ import logging
 import re
 import asyncio
 import time
+
+from www import markdown2
 from www.logger import logger
 from aiohttp import web
-from www.apis import APIError, Page, APIPermissionError
+from www.apis import APIError, Page, APIPermissionError, APIResourceNotFoundError
 from www.apis import APIValueError
 from www.config import configs
 from www.coroweb import get, post
-from www.models import User, Blog, next_id
-
+from www.models import User, Blog, next_id, Comment
 
 COOKIE_NAME = 'awesession'
 _COOKIE_KEY = configs.session.secret
@@ -77,6 +78,7 @@ def get_page_index(page_str):
         p = 1
     return p
 
+
 def user2cookie(user, max_age):
     '''
     Generate cookie str by user.
@@ -86,6 +88,12 @@ def user2cookie(user, max_age):
     s = '%s-%s-%s-%s' % (user.id, user.passwd, expires, _COOKIE_KEY)
     L = [user.id, expires, hashlib.sha1(s.encode('utf-8')).hexdigest()]
     return '-'.join(L)
+
+
+#文本文件转换为html
+def text2html(text):
+    lines = map(lambda s: '<p>%s</p>' % s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;'), filter(lambda s: s.strip() != '', text.split('\n')))
+    return ''.join(lines)
 
 
 @asyncio.coroutine
@@ -242,7 +250,32 @@ def api_register_user(*, email, name, passwd):
     return r
 
 '''
-============================manage===========================
+============================manage users==========================
+'''
+
+
+
+
+@get('/api/users')
+@asyncio.coroutine
+def api_get_users(request):
+    users = yield from User.findAll(orderBy='created_at desc')
+    for u in users:
+        u.passwd = '******'
+    return dict(users=users)
+
+
+@get('/manage/users')
+@asyncio.coroutine
+def manage_users(*, page='1'):
+    return {
+        '__template__': 'manage_users.html',
+        'page_index': get_page_index(page)
+    }
+
+
+'''
+============================manage blog===========================
 '''
 
 
@@ -260,7 +293,6 @@ def mamage_create_blog():
 @get('/manage/blogs')
 @asyncio.coroutine
 def manage_blogs(*, page = '1'):
-    # 博客管理页面
     return {
         '__template__': "manage_blogs.html",
         'page_index': get_page_index(page)
@@ -270,10 +302,6 @@ def manage_blogs(*, page = '1'):
 @get('/api/blogs')
 @asyncio.coroutine
 def api_blogs(*, page = '1'):
-    # 获取博客信息,调用位置：manage_blogs.html 40行
-    '''
-    请参考29行的api_get_users函数的注释
-    '''
     page_index = get_page_index(page)
     blog_count = yield from Blog.findNumber('count(id)')
     p = Page(blog_count, page_index)
@@ -282,11 +310,11 @@ def api_blogs(*, page = '1'):
     blogs = yield from Blog.findAll(orderBy = 'created_at desc', limit = (p.offset, p.limit))
     return dict(page = p, blogs = blogs)
 
+
 @post('/api/blogs')
 @asyncio.coroutine
 def api_create_blog(request, *, name, summary, content):
     check_admin(request)
-    # 只有管理员可以写博客 ,调用位置：manage_blog_edit.html 22行
     if not name or not name.strip():
         raise APIValueError('name', 'name cannot be empty')
     if not summary or not summary.strip():
@@ -297,6 +325,130 @@ def api_create_blog(request, *, name, summary, content):
     blog = Blog(user_id = request.__user__.id, user_name = request.__user__.name, user_image = request.__user__.image, name = name.strip(), summary = summary.strip(), content = content.strip())
     yield from blog.save()
     return blog
+
+
+@get('/blog/{id}')
+@asyncio.coroutine
+def get_blog(id):
+    blog = yield from Blog.find(id)
+    comments = yield from Comment.findAll('blog_id=?', [id], orderBy = 'created_at desc')
+    for c in comments:
+        c.html_content = text2html(c.content)
+    blog.html_content = markdown2.markdown(blog.content)
+
+    return {
+        '__template__': 'blog.html',
+        'blog': blog,
+        'comments': comments
+    }
+
+
+@get('/api/blogs/{id}')
+@asyncio.coroutine
+def api_get_blog(*, id):
+    blog = yield from Blog.find(id)
+    return blog
+
+
+@post('/api/blogs/{id}/delete')
+@asyncio.coroutine
+def api_delete_blog(id, request):
+    logger.info("删除博客的博客ID为：%s" % id)
+    check_admin(request)
+    b = yield from Blog.find(id)
+    if b is None:
+        raise APIResourceNotFoundError('Comment')
+    yield from b.remove()
+    return dict(id=id)
+
+
+@post('/api/blogs/modify')
+@asyncio.coroutine
+def api_modify_blog(request, *, id, name, summary, content):
+    logger.info("修改的博客的博客ID为：%s", id)
+    if not name or not name.strip():
+        raise APIValueError('name', 'name cannot be empty')
+    if not summary or not summary.strip():
+        raise APIValueError('summary', 'summary cannot be empty')
+    if not content or not content.strip():
+        raise APIValueError('content', 'content cannot be empty')
+
+    blog = yield from Blog.find(id)
+    blog.name = name
+    blog.summary = summary
+    blog.content = content
+
+    yield from blog.update()
+    return blog
+
+
+@get('/manage/blogs/modify/{id}')
+@asyncio.coroutine
+def manage_modify_blog(id):
+    return {
+        '__template__': 'manage_blog_modify.html',
+        'id': id,
+        'action': '/api/blogs/modify'
+    }
+
+'''
+============================manage comment===========================
+'''
+
+
+@get('/manage/')
+@asyncio.coroutine
+def manage():
+    return 'redirect:/manage/comments'
+
+
+@get('/manage/comments')
+@asyncio.coroutine
+def manage_comments(*, page='1'):
+    return {
+        '__template__': 'manage_comments.html',
+        'page_index': get_page_index(page)
+    }
+
+
+@get('/api/comments')
+@asyncio.coroutine
+def api_comments(*, page='1'):
+    page_index = get_page_index(page)
+    num = yield from Comment.findNumber('count(id)')
+    p = Page(num, page_index)
+    if num == 0:
+        return dict(page=p, comments=())
+    comments = yield from Comment.findAll(orderBy='created_at desc', limit=(p.offset, p.limit))
+    return dict(page=p, comments=comments)
+
+
+@post('/api/blogs/{id}/comments')
+@asyncio.coroutine
+def api_create_comment(id, request, *, content):
+    user = request.__user__
+    if user is None:
+        raise APIPermissionError('content')
+    if not content or not content.strip():
+        raise APIValueError('content')
+    blog = yield from Blog.find(id)
+    if blog is None:
+        raise APIResourceNotFoundError('Blog')
+    comment = Comment(blog_id=blog.id, user_id=user.id, user_name=user.name,
+                      user_image=user.image, content=content.strip())
+    yield from comment.save()
+    return comment
+
+
+@post('/api/comments/{id}/delete')
+@asyncio.coroutine
+def api_delete_comments(id, request):
+    check_admin(request)
+    c = yield from Comment.find(id)
+    if c is None:
+        raise APIResourceNotFoundError('Comment')
+    yield from c.remove()
+    return dict(id=id)
 
 if __name__ == '__main__':
     pass
