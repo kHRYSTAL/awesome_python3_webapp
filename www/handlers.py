@@ -19,8 +19,9 @@ import logging
 import re
 import asyncio
 import time
+from www.logger import logger
 from aiohttp import web
-from www.apis import APIError
+from www.apis import APIError, Page
 from www.apis import APIValueError
 from www.config import configs
 from www.coroweb import get, post
@@ -66,6 +67,16 @@ def api_get_users(*, page = '1'):
 '''
 
 
+def get_page_index(page_str):
+    p = 1
+    try:
+        p = int(page_str)
+    except ValueError as e:
+        pass
+    if p < 1:
+        p = 1
+    return p
+
 def user2cookie(user, max_age):
     '''
     Generate cookie str by user.
@@ -105,20 +116,39 @@ def cookie2user(cookie_str):
         return None
 
 
+# @get('/')
+# @asyncio.coroutine
+# def index(request):
+#     summary = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+#     blogs = [
+#         Blog(id='1', name='Test Blog', summary=summary, created_at=time.time() - 120),
+#         Blog(id='2', name='Something New', summary=summary, created_at=time.time() - 3600),
+#         Blog(id='3', name='Learn Swift', summary=summary, created_at=time.time() - 7200)
+#     ]
+#     return {
+#         '__template__': 'blogs.html',
+#         'blogs': blogs
+#     }
+
 @get('/')
 @asyncio.coroutine
-def index(request):
-    summary = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-    blogs = [
-        Blog(id='1', name='Test Blog', summary=summary, created_at=time.time() - 120),
-        Blog(id='2', name='Something New', summary=summary, created_at=time.time() - 3600),
-        Blog(id='3', name='Learn Swift', summary=summary, created_at=time.time() - 7200)
-    ]
+def index(*, page='1'):
+    page_index = get_page_index(page)
+    num = yield from Blog.findNumber('count(id)')
+    # 如果没有数量或数量等于0 不显示
+    if (not num) and num==0:
+        logger.info('the type of num is: %s' % type(num))
+        blogs = []
+    else:
+        # 通过page类计算当前页面的相关信息
+        page = Page(num, page_index)
+        blogs = yield from Blog.findAll(orderBy='created_at desc',limit=(page.offset, page.limit))
+
     return {
         '__template__': 'blogs.html',
+        'page': page,
         'blogs': blogs
     }
-
 
 '''
 ============================login and register===========================
@@ -201,6 +231,22 @@ def api_register_user(*, email, name, passwd):
     r.content_type = 'application/json'
     r.body = json.dumps(user, ensure_ascii=False).encode('utf-8')
     return r
+
+'''
+============================manage===========================
+'''
+
+
+@get('/manage/blogs/create')
+@asyncio.coroutine
+def mamage_create_blog():
+    # write blog
+    return {
+        '__template__': 'manage_blog_edit.html',
+        'id': '',
+        'action': '/api/blogs'  # 提交到此接口
+    }
+
 
 if __name__ == '__main__':
     pass

@@ -119,6 +119,7 @@ async def response_factory(app, handler):
                 resp = web.Response(body = json.dumps(
                     r, ensure_ascii = False, default = lambda o:o.__dict__).encode('utf-8'))
                 resp.content_type = 'application/json'
+                print(resp)
                 return resp
             else:
                 #r['__user__'] = request.__user__
