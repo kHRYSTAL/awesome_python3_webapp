@@ -13,7 +13,7 @@
 @file: config.py
 @time: 16/5/31 下午7:18
 """
-from www import config_default, config_override
+import config_default, config_override
 
 
 class Dict(dict):

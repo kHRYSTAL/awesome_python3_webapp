@@ -15,11 +15,8 @@
 """
 
 import logging;
-from www.config import configs
-from jinja2 import Environment, FileSystemLoader
 
-from www import orm
-from www.coroweb import add_routes, add_static
+from jinja2 import Environment, FileSystemLoader
 
 logging.basicConfig(level=logging.INFO,
                     format='levelname:%(levelname)s filename: %(filename)s '
@@ -31,9 +28,14 @@ logging.basicConfig(level=logging.INFO,
 import asyncio, os, json, time
 from datetime import datetime
 from aiohttp import web
-from www.logger import logger
-from www.handlers import COOKIE_NAME,cookie2user
+import orm
+from logger import logger
 
+from config import configs
+
+from coroweb import add_routes, add_static
+
+from handlers import cookie2user, COOKIE_NAME
 
 # def index(request):
 #     return web.Response(body=b'<h1>Awesome</h1>',content_type='text/html')
@@ -67,13 +69,17 @@ def init_jinja2(app, **kw):
     app['__templating__'] = env
     # 给webapp设置模板
 
-async def logger_factory(app, handler):
-    async def logger_fact(request):
+
+@asyncio.coroutine
+def logger_factory(app, handler):
+     @asyncio.coroutine
+     def logger_fact(request):
         # 记录日志:
         logger.info('Request: %s %s' % (request.method, request.path))
         #继续处理请求:
-        return (await handler(request))
-    return logger_fact
+        return (yield from handler(request))
+     return logger_fact
+
 
 @asyncio.coroutine
 def auth_factory(app, handler):
@@ -105,11 +111,13 @@ def auth_factory(app, handler):
 # 在这个过程中，我们只用关心我们的handler的处理就好了，其他的都走统一的通道，如果需要差异化处理，就在通道中选择适合的地方添加处理代码。
 # 注： 在response_factory中应用了jinja2来渲染模板文件
 
-async def response_factory(app, handler):
+@asyncio.coroutine
+def response_factory(app, handler):
 
-    async def response(request):
+    @asyncio.coroutine
+    def response(request):
         logger.info('Response handler...')
-        r = (await handler(request))
+        r = (yield from handler(request))
         # 调用相应的URL处理函数处理请求
         logger.info('response result = %s' % str(r))
 
@@ -178,8 +186,9 @@ def datetime_filter(t):
     return u'%s年%s月%s日' % (dt.year, dt.month, dt.day)
 
 
-async def init(loop):
-    await orm.create_pool(loop=loop, **configs.db)
+@asyncio.coroutine
+def init(loop):
+    yield from orm.create_pool(loop=loop, **configs.db)
     # app.router.add_route('GET', '/', index)
     # middlewares(中间件)设置3个中间处理函数(都是装饰器)
     # middlewares中的每个factory接受两个参数，app 和 handler(即middlewares中的下一个handler)
@@ -196,7 +205,7 @@ async def init(loop):
     add_static(app)
     # 启动
     handler = app.make_handler()
-    srv = await loop.create_server(handler, '127.0.0.1', 9000)
+    srv = yield from loop.create_server(handler, '127.0.0.1', 9000)
     logging.info('server start at http://127.0.0.1:9000...')
     return srv
 

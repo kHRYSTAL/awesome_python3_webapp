@@ -16,7 +16,7 @@
 
 
 import time, uuid
-from www.orm import Model, StringField, BooleanField, FloatField, TextField
+from orm import Model, StringField, BooleanField, FloatField, TextField
 
 #生成id不会重复
 def next_id():

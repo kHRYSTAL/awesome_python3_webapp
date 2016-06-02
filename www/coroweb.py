@@ -18,8 +18,8 @@ import asyncio, os, inspect, logging, functools
 from urllib import parse
 from aiohttp import web
 
-from www.apis import APIError
-from www.logger import logger
+from apis import APIError
+from logger import logger
 
 
 def get(path):

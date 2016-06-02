@@ -20,14 +20,14 @@ import re
 import asyncio
 import time
 
-from www import markdown2
-from www.logger import logger
+import markdown2
+from logger import logger
 from aiohttp import web
-from www.apis import APIError, Page, APIPermissionError, APIResourceNotFoundError
-from www.apis import APIValueError
-from www.config import configs
-from www.coroweb import get, post
-from www.models import User, Blog, next_id, Comment
+from apis import APIError, Page, APIPermissionError, APIResourceNotFoundError
+from apis import APIValueError
+from config import configs
+from coroweb import get, post
+from models import User, Blog, next_id, Comment
 
 COOKIE_NAME = 'awesession'
 _COOKIE_KEY = configs.session.secret
